@@ -1,0 +1,18 @@
+name: Site check (temporary)
+on:
+  push:
+    branches: [site-check]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in https://noodlellm.com/ https://www.noodlellm.com/ http://noodlellm.com/ https://noodlellm.com/gate.js https://noodlellm.com/download.html https://noodletechnology.com/ https://www.noodletechnology.com/ https://hearthlabs.github.io/noodlellm-website/; do
+            echo "=================== $u"
+            curl -sS -o body.txt -D - -w "\n>> code=%{http_code} ip=%{remote_ip} time=%{time_total}\n" --max-time 25 "$u" || true
+            head -c 600 body.txt; echo
+          done
+          for h in noodlellm.com www.noodlellm.com noodletechnology.com www.noodletechnology.com; do echo "== dig $h"; dig +short $h; dig +short CNAME $h; done
+          echo "== github pages direct with Host header"
+          curl -sS -o /dev/null -w "code=%{http_code}\n" --resolve noodlellm.com:443:185.199.108.153 https://noodlellm.com/ || true
+          echo | openssl s_client -connect 185.199.108.153:443 -servername noodlellm.com 2>/dev/null | openssl x509 -noout -subject -dates || true
