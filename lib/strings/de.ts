@@ -29,11 +29,10 @@ export const de: Strings = {
     privacy: "Datenschutz",
     terms: "AGB",
     rights: (year, company) => `© ${year} ${company}`,
-    llc: "Eine Limited Liability Company nach dem Recht von West Virginia",
   },
 
   home: {
-    heroTitle: "Privat, offline, ohne Zähler. Diese lokale KI gehört nur dir.",
+    heroTitle: "Privat, offline, ohne Nutzungslimit. Diese lokale KI gehört nur dir.",
     heroBody: (app) =>
       `${app} führt KI-Modelle auf deinem eigenen Computer aus statt auf den Servern anderer. Nichts, was du eingibst, verlässt deinen Rechner, es läuft auch ohne Internet weiter, und kein Zähler misst, wie viel du es nutzt. Schreib damit, fass damit zusammen und frag es zu deinen eigenen Dokumenten.`,
     download: "Für Windows herunterladen",
@@ -43,7 +42,7 @@ export const de: Strings = {
     fromPrice: "ab 8 $ im Monat",
 
     whyTitle: "Warum selbst betreiben",
-    whyIntro: "Die Cloud ist klüger, aber darum ging es nie allein. Nutze beides. Behalte eine Cloud-KI wie ChatGPT für das seltene Problem, das wirklich das Beste braucht, denn deine lokale KI ist bei schwierigen Denkfragen womöglich schwächer als Cloud-Modelle. Erledige das Alltägliche, das Vertrauliche und das Wiederkehrende hier: einen Brief entwerfen, einen Bericht zusammenfassen, die Klausel in einem Vertrag finden.",
+    whyIntro: "Die Cloud ist klüger, aber darum ging es nie. Nutze beides. Behalte eine Cloud-KI wie ChatGPT für komplexe Probleme. Erledige die alltäglichen, vertraulichen und wiederkehrenden Aufgaben hier: einen Brief entwerfen, einen Bericht zusammenfassen, die Klausel in einem Vertrag finden.",
     why: [
       {
         t: "Sie machen die Regeln. Du musst damit leben.",
@@ -77,9 +76,6 @@ export const de: Strings = {
 
     individualTitle: "Was es für dich tut",
     individualIntro: "Die App gibt es auf Deutsch, Englisch, Spanisch, Japanisch und Chinesisch, und die meisten Modelle antworten in der Sprache, in der du schreibst.",
-    practiceLine:
-      "Für eine Kanzlei oder Praxis: Es wird nichts übertragen, also gibt es keinen Auftragsverarbeiter, den ein Datenschutzvertrag nennen müsste, und ein Abo „Kanzleien & Praxen“ deckt bis zu 15 Computer im Büro ab.",
-    practicePlan: "Zum Abo",
     individual: [
       {
         t: "Es liest deine eigenen Dateien",
@@ -120,7 +116,7 @@ export const de: Strings = {
     tryItButton: "Herunterladen",
     title: "Was es kostet",
     money: (n) => `${n.toLocaleString("de-DE")} $`,
-    lead: "Vierzehn Tage, um alles auszuprobieren, danach ein Abo. Die Modelle selbst sind kostenlos: Lade sie in der App herunter oder lege Modelle, die du schon hast, in den Modellordner der App. Das Abo ist für die App, ohne Gebühren pro Nachricht oder pro Token.",
+    lead: "Vierzehn Tage, um alles auszuprobieren, danach ein Abo. Die Modelle selbst sind kostenlos: Lade sie in der App herunter oder lege Modelle, die du schon hast, in den Modellordner der App. Das Abo ist für die App, ohne Gebühren pro Nachricht.",
     lifetime: (p: string) => `oder einmalig ${p}, für immer deins`,
     yearly: (p: string, save: string) => `oder ${p} pro Jahr, du sparst ${save}`,
     plans: [

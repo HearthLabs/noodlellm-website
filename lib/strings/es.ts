@@ -29,11 +29,10 @@ export const es: Strings = {
     privacy: "Privacidad",
     terms: "Condiciones",
     rights: (year, company) => `© ${year} ${company}`,
-    llc: "Una sociedad de responsabilidad limitada de Virginia Occidental",
   },
 
   home: {
-    heroTitle: "Privado, sin conexión, sin contador. Esta IA local es solo tuya.",
+    heroTitle: "Privado, sin conexión, sin límites de uso. Esta IA local es solo tuya.",
     heroBody: (app) =>
       `${app} ejecuta modelos de IA en tu propio ordenador en lugar de en los servidores de otros. Nada de lo que escribes sale de tu equipo, sigue funcionando sin internet y no hay contador de cuánto lo usas. Escribe con él, resume con él y pregúntale por tus propios documentos.`,
     download: "Descargar para Windows",
@@ -43,7 +42,7 @@ export const es: Strings = {
     fromPrice: "desde 8 $ al mes",
 
     whyTitle: "Por qué ejecutarla tú",
-    whyIntro: "La nube es más lista, pero esa nunca fue toda la cuestión. Usa las dos. Guarda una IA en la nube como ChatGPT para el problema raro que necesita lo mejor de lo mejor, porque tu IA local puede ser peor que los modelos en la nube en preguntas de razonamiento difícil. Haz aquí lo cotidiano, lo privado y lo repetitivo: redactar una carta, resumir un informe, encontrar la cláusula en un contrato.",
+    whyIntro: "La nube es más lista, pero ese nunca fue el debate. Usa las dos. Guarda una IA en la nube como ChatGPT para los problemas complejos. Haz aquí las tareas cotidianas, privadas y repetitivas: redactar una carta, resumir un informe, encontrar la cláusula en un contrato.",
     why: [
       {
         t: "Ellos ponen las reglas. Tú te aguantas.",
@@ -77,9 +76,6 @@ export const es: Strings = {
 
     individualTitle: "Lo que hace por ti",
     individualIntro: "La app está en español, inglés, alemán, japonés y chino, y la mayoría de los modelos responden en el idioma en que escribas.",
-    practiceLine:
-      "Para un despacho o consulta: no se transmite nada, así que no hay ningún encargado del tratamiento que nombrar en un acuerdo de datos, y un plan Despachos cubre hasta 15 ordenadores en la oficina.",
-    practicePlan: "Ver el plan",
     individual: [
       {
         t: "Lee tus propios archivos",
@@ -121,7 +117,7 @@ export const es: Strings = {
     title: "Lo que cuesta",
     // es-ES leaves 2000 ungrouped; the de-DE form gives the "2.000" Spanish prices use.
     money: (n) => `${n.toLocaleString("de-DE")} $`,
-    lead: "Catorce días para probarlo todo y después una suscripción. Los modelos son gratis: descárgalos desde la aplicación o pon los que ya tengas en la carpeta de modelos de la aplicación. La suscripción es por la aplicación, sin cargos por mensaje ni por token.",
+    lead: "Catorce días para probarlo todo y después una suscripción. Los modelos son gratis: descárgalos desde la aplicación o pon los que ya tengas en la carpeta de modelos de la aplicación. La suscripción es por la aplicación, sin cargos por mensaje.",
     lifetime: (p: string) => `o ${p} una sola vez, tuyo para siempre`,
     yearly: (p: string, save: string) => `o ${p} al año, ahorras ${save}`,
     plans: [

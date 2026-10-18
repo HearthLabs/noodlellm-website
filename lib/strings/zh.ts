@@ -28,11 +28,10 @@ export const zh: Strings = {
     privacy: "隐私",
     terms: "条款",
     rights: (year, company) => `© ${year} ${company}`,
-    llc: "美国西弗吉尼亚州有限责任公司",
   },
 
   home: {
-    heroTitle: "私密、离线、不计量。这个本地 AI 只属于你。",
+    heroTitle: "私密、离线、不限用量。这个本地 AI 只属于你。",
     heroBody: (app) =>
       `${app} 让 AI 模型在你自己的电脑上运行，而不是在别人的服务器上。你输入的内容不会离开你的电脑，断网也能照常使用，用多少都不计量收费。用它写作、做总结，询问你自己的文档。`,
     download: "下载 Windows 版",
@@ -42,7 +41,7 @@ export const zh: Strings = {
     fromPrice: "每月 8 美元起",
 
     whyTitle: "为什么要自己运行",
-    whyIntro: "云端更聪明，但这从来不是问题的全部。两者都用。本地 AI 在复杂推理问题上可能不如云端模型，所以把 ChatGPT 这样的云端 AI 留给少数真正需要最强能力的难题；起草信件、总结报告、在合同里找条款这类日常的、私密的、重复的工作，就在这里做。",
+    whyIntro: "云端更聪明，但争论的焦点从来不在这里。两者都用。把 ChatGPT 这样的云端 AI 留给复杂的问题；起草信件、总结报告、在合同里找条款这类日常的、私密的、重复的工作，就在这里做。",
     why: [
       {
         t: "规则由他们定，你只能接受。",
@@ -76,9 +75,6 @@ export const zh: Strings = {
 
     individualTitle: "它能为你做什么",
     individualIntro: "应用支持中文、英文、德文、西班牙文和日文，大多数模型会用你书写的语言回答。",
-    practiceLine:
-      "对于事务所和诊所：不传输任何数据，所以数据协议里没有需要列出的处理方；一个“事务所”方案即可覆盖办公室最多 15 台电脑。",
-    practicePlan: "查看方案",
     individual: [
       {
         t: "它能读你自己的文件",
@@ -119,7 +115,7 @@ export const zh: Strings = {
     tryItButton: "下载",
     title: "价格",
     money: (n) => `$${n.toLocaleString("en-US")}`,
-    lead: "先免费试用全部功能 14 天，之后订阅。模型本身免费：在应用里下载，或把你已有的模型放进应用的模型文件夹。订阅是为应用付费，不按消息或 token 收费。",
+    lead: "先免费试用全部功能 14 天，之后订阅。模型本身免费：在应用里下载，或把你已有的模型放进应用的模型文件夹。订阅是为应用付费，不按消息收费。",
     lifetime: (p: string) => `或一次性支付 ${p}，终身使用`,
     yearly: (p: string, save: string) => `或每年 ${p}，省 ${save}`,
     plans: [
