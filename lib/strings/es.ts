@@ -32,7 +32,7 @@ export const es: Strings = {
   },
 
   home: {
-    heroTitle: "Privado, sin conexión, sin contador. Esta IA local es solo tuya.",
+    heroTitle: "Privado, sin conexión, sin límites de uso. Esta IA local es solo tuya.",
     heroBody: (app) =>
       `${app} ejecuta modelos de IA en tu propio ordenador en lugar de en los servidores de otros. Nada de lo que escribes sale de tu equipo, sigue funcionando sin internet y no hay contador de cuánto lo usas. Escribe con él, resume con él y pregúntale por tus propios documentos.`,
     download: "Descargar para Windows",
@@ -105,7 +105,7 @@ export const es: Strings = {
     title: "Lo que cuesta",
     // es-ES leaves 2000 ungrouped; the de-DE form gives the "2.000" Spanish prices use.
     money: (n) => `${n.toLocaleString("de-DE")} $`,
-    lead: "Catorce días para probarlo todo y después una suscripción. Los modelos son gratis: descárgalos desde la aplicación o pon los que ya tengas en la carpeta de modelos de la aplicación. La suscripción es por la aplicación, sin cargos por mensaje ni por token.",
+    lead: "Catorce días para probarlo todo y después una suscripción. Los modelos son gratis: descárgalos desde la aplicación o pon los que ya tengas en la carpeta de modelos de la aplicación. La suscripción es por la aplicación, sin cargos por mensaje.",
     lifetime: (p: string) => `o ${p} una sola vez, tuyo para siempre`,
     yearly: (p: string, save: string) => `o ${p} al año, ahorras ${save}`,
     plans: [

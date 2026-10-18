@@ -38,7 +38,7 @@ export const en = {
   },
 
   home: {
-    heroTitle: "Private, offline, unmetered. This local AI is only yours.",
+    heroTitle: "Private, offline, no usage limits. This local AI is only yours.",
     heroBody: (app: string) =>
       `${app} runs AI models on your own computer instead of someone else's servers. Nothing you type leaves your machine, it keeps working with the internet off, and there is no meter on how much you use it. Write with it, summarise with it, and ask it about your own documents.`,
     download: "Download for Windows",
@@ -56,7 +56,7 @@ export const en = {
       },
       {
         t: "Try again as often as you like.",
-        b: "Good results come from rewording, retrying and refining. When every attempt is metered, you hold back. On your own computer the tenth try costs the same as the first: nothing extra.",
+        b: "Good results come from rewording, retrying and refining. When you pay for every attempt, you hold back. On your own computer the tenth try costs the same as the first: nothing extra.",
       },
       {
         t: "Your files never leave the room.",
@@ -110,7 +110,7 @@ export const en = {
     tryItButton: "Download",
     title: "What it costs",
     money: (n: number) => `$${n.toLocaleString("en-US")}`,
-    lead: "Fourteen days to try everything, then a subscription. The models themselves are free: download them in the app, or put models you already have in the app's models folder. The subscription is for the app, with no per-message or per-token charges.",
+    lead: "Fourteen days to try everything, then a subscription. The models themselves are free: download them in the app, or put models you already have in the app's models folder. The subscription is for the app, with no charge per message.",
     lifetime: (p: string) => `or ${p} once, yours for life`,
     yearly: (p: string, save: string) => `or ${p} a year, save ${save}`,
     plans: [

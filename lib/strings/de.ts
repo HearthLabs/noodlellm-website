@@ -32,7 +32,7 @@ export const de: Strings = {
   },
 
   home: {
-    heroTitle: "Privat, offline, ohne Zähler. Diese lokale KI gehört nur dir.",
+    heroTitle: "Privat, offline, ohne Nutzungslimit. Diese lokale KI gehört nur dir.",
     heroBody: (app) =>
       `${app} führt KI-Modelle auf deinem eigenen Computer aus statt auf den Servern anderer. Nichts, was du eingibst, verlässt deinen Rechner, es läuft auch ohne Internet weiter, und kein Zähler misst, wie viel du es nutzt. Schreib damit, fass damit zusammen und frag es zu deinen eigenen Dokumenten.`,
     download: "Für Windows herunterladen",
@@ -104,7 +104,7 @@ export const de: Strings = {
     tryItButton: "Herunterladen",
     title: "Was es kostet",
     money: (n) => `${n.toLocaleString("de-DE")} $`,
-    lead: "Vierzehn Tage, um alles auszuprobieren, danach ein Abo. Die Modelle selbst sind kostenlos: Lade sie in der App herunter oder lege Modelle, die du schon hast, in den Modellordner der App. Das Abo ist für die App, ohne Gebühren pro Nachricht oder pro Token.",
+    lead: "Vierzehn Tage, um alles auszuprobieren, danach ein Abo. Die Modelle selbst sind kostenlos: Lade sie in der App herunter oder lege Modelle, die du schon hast, in den Modellordner der App. Das Abo ist für die App, ohne Gebühren pro Nachricht.",
     lifetime: (p: string) => `oder einmalig ${p}, für immer deins`,
     yearly: (p: string, save: string) => `oder ${p} pro Jahr, du sparst ${save}`,
     plans: [

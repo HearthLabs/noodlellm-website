@@ -31,7 +31,7 @@ export const zh: Strings = {
   },
 
   home: {
-    heroTitle: "私密、离线、不计量。这个本地 AI 只属于你。",
+    heroTitle: "私密、离线、不限用量。这个本地 AI 只属于你。",
     heroBody: (app) =>
       `${app} 让 AI 模型在你自己的电脑上运行，而不是在别人的服务器上。你输入的内容不会离开你的电脑，断网也能照常使用，用多少都不计量收费。用它写作、做总结，询问你自己的文档。`,
     download: "下载 Windows 版",
@@ -103,7 +103,7 @@ export const zh: Strings = {
     tryItButton: "下载",
     title: "价格",
     money: (n) => `$${n.toLocaleString("en-US")}`,
-    lead: "先免费试用全部功能 14 天，之后订阅。模型本身免费：在应用里下载，或把你已有的模型放进应用的模型文件夹。订阅是为应用付费，不按消息或 token 收费。",
+    lead: "先免费试用全部功能 14 天，之后订阅。模型本身免费：在应用里下载，或把你已有的模型放进应用的模型文件夹。订阅是为应用付费，不按消息收费。",
     lifetime: (p: string) => `或一次性支付 ${p}，终身使用`,
     yearly: (p: string, save: string) => `或每年 ${p}，省 ${save}`,
     plans: [
