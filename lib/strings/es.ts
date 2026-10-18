@@ -50,12 +50,24 @@ export const es: Strings = {
         b: "Las empresas de IA en la nube deciden el precio, los límites y qué modelo te toca, y lo cambian cuando les conviene. En tu ordenador nada cambia a menos que lo cambies tú.",
       },
       {
+        t: "Lo bastante lista es una línea, no una clasificación.",
+        b: "Hay trabajos que necesitan el modelo más listo que exista. La mayoría no: redactar una carta, resumir un informe, encontrar la cláusula de un contrato. Cuando un modelo supera el listón de ese trabajo, ser más listo deja de importar, y lo que importa es el coste, la privacidad y quién manda.",
+      },
+      {
         t: "Vuelve a intentarlo tantas veces como quieras.",
         b: "Los buenos resultados salen de reformular, reintentar y pulir. Cuando cada intento se cobra, te contienes. En tu propio ordenador el décimo intento cuesta lo mismo que el primero: nada extra.",
       },
       {
         t: "Tus archivos no salen de la habitación.",
         b: "No se sube nada de lo que escribes o abres, así que no hay nada que filtrar ni ninguna política de privacidad ajena en la que confiar. Una vez instalado un modelo, no necesita internet en absoluto.",
+      },
+      {
+        t: "No alquilas un modelo. El ordenador es tuyo.",
+        b: "Un modelo es solo un archivo. Cuando sale uno mejor, lo descargas: el mismo ordenador, sin contrato nuevo. El que tienes nunca cambia ni desaparece a menos que tú lo decidas.",
+      },
+      {
+        t: "Cada año cabe más en tu PC.",
+        b: "Hace unos años un ordenador doméstico apenas podía ejecutar nada útil. Hoy una tarjeta gráfica normal ejecuta modelos que resuelven casi todo el trabajo diario, y cada nueva versión hace que más tareas crucen esa línea.",
       },
     ],
 

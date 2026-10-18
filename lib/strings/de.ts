@@ -50,12 +50,24 @@ export const de: Strings = {
         b: "Cloud-KI-Anbieter bestimmen Preis, Grenzen und welches Modell du bekommst, und ändern das, wann es ihnen passt. Auf deinem Computer ändert sich nichts, solange du es nicht änderst.",
       },
       {
+        t: "Klug genug ist eine Linie, keine Rangliste.",
+        b: "Manche Aufgaben brauchen das klügste Modell, das es gibt. Die meisten nicht: einen Brief entwerfen, einen Bericht zusammenfassen, die Klausel im Vertrag finden. Sobald ein Modell die Latte für eine Aufgabe überspringt, zählt noch mehr Klugheit kaum, und es zählen Kosten, Datenschutz und wer das Sagen hat.",
+      },
+      {
         t: "Probier es so oft, wie du willst.",
         b: "Gute Ergebnisse entstehen durch Umformulieren, Wiederholen und Feinschliff. Wenn jeder Versuch abgerechnet wird, hältst du dich zurück. Auf deinem eigenen Rechner kostet der zehnte Versuch dasselbe wie der erste: nichts extra.",
       },
       {
         t: "Deine Dateien verlassen nie den Raum.",
         b: "Nichts, was du tippst oder öffnest, wird hochgeladen, also kann nichts durchsickern, und du musst niemandes Datenschutzerklärung vertrauen. Ist ein Modell installiert, braucht es überhaupt kein Internet.",
+      },
+      {
+        t: "Du mietest kein Modell. Der Rechner gehört dir.",
+        b: "Ein Modell ist nur eine Datei. Kommt ein besseres heraus, lädst du es herunter: derselbe Computer, kein neuer Vertrag. Das Modell, das du hast, ändert sich nie und verschwindet nie, es sei denn, du entscheidest es.",
+      },
+      {
+        t: "Jedes Jahr passt mehr auf deinen PC.",
+        b: "Vor ein paar Jahren konnte ein Heimcomputer kaum etwas Nützliches ausführen. Heute läuft auf einer gewöhnlichen Grafikkarte ein Modell, das den größten Teil der Alltagsarbeit erledigt, und jede neue Veröffentlichung holt mehr über diese Linie.",
       },
     ],
 

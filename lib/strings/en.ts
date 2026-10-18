@@ -56,12 +56,24 @@ export const en = {
         b: "Cloud AI companies decide the price, the limits and which model you get, and change them when it suits them. On your computer nothing changes unless you change it.",
       },
       {
+        t: "Clever enough is a line, not a ranking.",
+        b: "Some jobs need the cleverest model there is. Most do not: drafting a letter, summarising a report, finding the clause in a contract. Once a model clears the bar for the job, being cleverer stops mattering, and what matters is cost, privacy and who is in charge.",
+      },
+      {
         t: "Try again as often as you like.",
         b: "Good results come from rewording, retrying and refining. When every attempt is metered, you hold back. On your own computer the tenth try costs the same as the first: nothing extra.",
       },
       {
         t: "Your files never leave the room.",
         b: "Nothing you type or open is uploaded, so there is nothing to leak and nobody else's privacy policy to trust. Once a model is installed it does not need the internet at all.",
+      },
+      {
+        t: "You are not renting a model. You own the machine.",
+        b: "A model is just a file. When a better one comes out, download it: same computer, no new contract. The one you have never changes or disappears unless you decide it should.",
+      },
+      {
+        t: "Every year, more of it fits on your PC.",
+        b: "A few years ago a home computer could run little that was useful. Today an ordinary graphics card runs models that handle most everyday work, and every new release moves more across the line.",
       },
     ],
 
