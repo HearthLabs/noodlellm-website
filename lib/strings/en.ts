@@ -56,12 +56,24 @@ export const en = {
         b: "Cloud AI companies decide the price, the limits and which model you get, and change them when it suits them. On your computer nothing changes unless you change it.",
       },
       {
+        t: "Clever enough is a line, not a ranking.",
+        b: "Some jobs need the cleverest model there is. Most do not: drafting a letter, summarising a report, finding the clause in a contract. Once a model clears the bar for the job, being cleverer stops mattering, and what matters is cost, privacy and who is in charge.",
+      },
+      {
         t: "Try again as often as you like.",
         b: "Good results come from rewording, retrying and refining. When every attempt is metered, you hold back. On your own computer the tenth try costs the same as the first: nothing extra.",
       },
       {
         t: "Your files never leave the room.",
         b: "Nothing you type or open is uploaded, so there is nothing to leak and nobody else's privacy policy to trust. Once a model is installed it does not need the internet at all.",
+      },
+      {
+        t: "You are not renting a model. You own the machine.",
+        b: "A model is just a file. When a better one comes out, download it: same computer, no new contract. The one you have never changes or disappears unless you decide it should.",
+      },
+      {
+        t: "Every year, more of it fits on your PC.",
+        b: "A few years ago a home computer could run little that was useful. Today an ordinary graphics card runs models that handle most everyday work, and every new release moves more across the line.",
       },
     ],
 
@@ -89,11 +101,11 @@ export const en = {
       },
       {
         t: "Tasks for jobs you repeat",
-        b: "Save a job you do often, like answering an email or turning notes into minutes, with its own instructions. Then paste in what you have and press Run. Four ready-made tasks are there to start from.",
+        b: "Save a job you do often, like answering an email or turning notes into minutes, with its own instructions. Then paste in what you have and press Run. Six ready-made tasks are there to start from, and each one can be taught from examples of your own: what went in and the result you kept.",
       },
       {
         t: "Teach it your style",
-        b: "Give it a folder of your own writing and it learns to sound like you, then use what it learned in any task. Teaching needs a Windows PC with an NVIDIA graphics card, and arrives in an update soon.",
+        b: "Give it folders or files of your own writing and it learns to sound like you. It reads them first and warns you if they mix other people's writing in. Every task then runs in your style, and switching to another model teaches it your style again on its own. Teaching needs a Windows PC with an NVIDIA graphics card, and arrives in an update soon.",
       },
       {
         t: "Use it from your phone",
@@ -130,14 +142,14 @@ export const en = {
         price: "",
         per: "per month",
         blurb: "The Individuals plan at a founding price, kept for as long as you stay subscribed.",
-        points: ["One person", "Up to 3 computers", "First 100 members only"],
+        points: ["One person", "Up to 2 computers", "First 100 members only"],
       },
       {
         name: "Individuals",
         price: "",
         per: "per month",
         blurb: "For one person on their own computers.",
-        points: ["One person", "Up to 3 computers"],
+        points: ["One person", "Up to 2 computers"],
       },
       {
         name: "Practices",
@@ -152,7 +164,7 @@ export const en = {
       ["Is there a limit on how much I can use it?", "No. It runs on your own computer, so there is no charge per message and no daily cap. Use it as much as you like."],
       ["Does anything I type get sent to you?", "No. Your questions, answers and files never leave your computer. The app only goes online to download models and check your subscription."],
       ["What happens after the 14 days?", "The app pauses until you subscribe. Your models and conversations stay on your computer, and nothing is deleted."],
-      ["Can I use it on more than one computer?", "Yes, on up to 3 of your computers. On a new one, open Account and use the email you paid with; we send you a 6-digit code. At the limit, the app lists your computers so you can sign one out. A computer unused for 60 days frees its place by itself."],
+      ["Can I use it on more than one computer?", "Yes, on up to 2 of your computers. On a new one, open Account and use the email you paid with; we send you a 6-digit code. At the limit, the app lists your computers so you can sign one out. A computer unused for 60 days frees its place by itself."],
       ["Does it work offline?", "Yes. Your licence is checked on your computer, without the internet. It renews itself whenever you are online, so only a computer kept offline for more than about 35 days needs to go online once."],
       ["Will my $8 go up later?", "For the first 100 members, you keep $8 a month for as long as you stay subscribed, even after the price for new members rises. Or pay $100 once for a lifetime licence and never pay again."],
       ["Can I cancel?", "Yes, at any time, from the Account section of the app."],

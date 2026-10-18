@@ -50,12 +50,24 @@ export const es: Strings = {
         b: "Las empresas de IA en la nube deciden el precio, los límites y qué modelo te toca, y lo cambian cuando les conviene. En tu ordenador nada cambia a menos que lo cambies tú.",
       },
       {
+        t: "Lo bastante lista es una línea, no una clasificación.",
+        b: "Hay trabajos que necesitan el modelo más listo que exista. La mayoría no: redactar una carta, resumir un informe, encontrar la cláusula de un contrato. Cuando un modelo supera el listón de ese trabajo, ser más listo deja de importar, y lo que importa es el coste, la privacidad y quién manda.",
+      },
+      {
         t: "Vuelve a intentarlo tantas veces como quieras.",
         b: "Los buenos resultados salen de reformular, reintentar y pulir. Cuando cada intento se cobra, te contienes. En tu propio ordenador el décimo intento cuesta lo mismo que el primero: nada extra.",
       },
       {
         t: "Tus archivos no salen de la habitación.",
         b: "No se sube nada de lo que escribes o abres, así que no hay nada que filtrar ni ninguna política de privacidad ajena en la que confiar. Una vez instalado un modelo, no necesita internet en absoluto.",
+      },
+      {
+        t: "No alquilas un modelo. El ordenador es tuyo.",
+        b: "Un modelo es solo un archivo. Cuando sale uno mejor, lo descargas: el mismo ordenador, sin contrato nuevo. El que tienes nunca cambia ni desaparece a menos que tú lo decidas.",
+      },
+      {
+        t: "Cada año cabe más en tu PC.",
+        b: "Hace unos años un ordenador doméstico apenas podía ejecutar nada útil. Hoy una tarjeta gráfica normal ejecuta modelos que resuelven casi todo el trabajo diario, y cada nueva versión hace que más tareas crucen esa línea.",
       },
     ],
 
@@ -83,11 +95,11 @@ export const es: Strings = {
       },
       {
         t: "Tareas para lo que repites",
-        b: "Guarda un trabajo que haces a menudo, como responder un correo o convertir notas en un acta, con sus propias instrucciones. Luego pega lo que tienes y pulsa Ejecutar. Incluye cuatro tareas listas para empezar.",
+        b: "Guarda un trabajo que haces a menudo, como responder un correo o convertir notas en un acta, con sus propias instrucciones. Luego pega lo que tienes y pulsa Ejecutar. Hay seis tareas listas para empezar, y cada una puede aprender de tus propios ejemplos: lo que entró y el resultado que te quedaste.",
       },
       {
         t: "Enséñale tu estilo",
-        b: "Dale una carpeta con tus propios textos y aprende a sonar como tú, para usarlo en cualquier tarea. Enseñarle requiere un PC con Windows y una tarjeta gráfica NVIDIA, y llega pronto en una actualización.",
+        b: "Dale carpetas o archivos con tus propios textos y aprende a sonar como tú. Antes los lee y te avisa si se mezclan textos de otras personas. Después, cada tarea funciona con tu estilo, y al cambiar a otro modelo se lo vuelve a enseñar solo. Enseñar necesita un PC con Windows y tarjeta gráfica NVIDIA, y llega pronto en una actualización.",
       },
       {
         t: "Úsalo desde el móvil",
@@ -125,14 +137,14 @@ export const es: Strings = {
         price: "",
         per: "al mes",
         blurb: "El plan Particulares a precio de fundador, fijo mientras sigas suscrito.",
-        points: ["Una persona", "Hasta 3 ordenadores", "Solo los 100 primeros"],
+        points: ["Una persona", "Hasta 2 ordenadores", "Solo los 100 primeros"],
       },
       {
         name: "Particulares",
         price: "",
         per: "al mes",
         blurb: "Para una persona en sus propios ordenadores.",
-        points: ["Una persona", "Hasta 3 ordenadores"],
+        points: ["Una persona", "Hasta 2 ordenadores"],
       },
       {
         name: "Despachos",
@@ -147,7 +159,7 @@ export const es: Strings = {
       ["¿Hay un límite de uso?", "No. Funciona en tu propio ordenador, así que no se cobra por mensaje ni hay tope diario. Úsalo todo lo que quieras."],
       ["¿Os llega algo de lo que escribo?", "No. Tus preguntas, respuestas y archivos nunca salen de tu ordenador. La aplicación solo se conecta para descargar modelos y comprobar tu suscripción."],
       ["¿Qué pasa después de los 14 días?", "La aplicación se pausa hasta que te suscribas. Tus modelos y conversaciones se quedan en tu ordenador y no se borra nada."],
-      ["¿Puedo usarlo en más de un ordenador?", "Sí, en hasta 3 de tus ordenadores. En uno nuevo, abre Cuenta y usa el correo con el que pagaste; te enviamos un código de 6 dígitos. Al llegar al límite, la aplicación muestra tus ordenadores para que cierres la sesión en uno. Un ordenador que no se usa durante 60 días libera su plaza solo."],
+      ["¿Puedo usarlo en más de un ordenador?", "Sí, en hasta 2 de tus ordenadores. En uno nuevo, abre Cuenta y usa el correo con el que pagaste; te enviamos un código de 6 dígitos. Al llegar al límite, la aplicación muestra tus ordenadores para que cierres la sesión en uno. Un ordenador que no se usa durante 60 días libera su plaza solo."],
       ["¿Funciona sin conexión?", "Sí. Tu licencia se comprueba en tu ordenador, sin internet. Se renueva sola cuando estás conectado, así que solo un ordenador que pase más de unos 35 días sin conexión tendrá que conectarse una vez."],
       ["¿Subirán mis 8 $ más adelante?", "Para los 100 primeros miembros, se mantienen los 8 $ al mes mientras sigan suscritos, aunque suba el precio para los nuevos miembros. O paga 100 $ una sola vez por una licencia de por vida y no vuelvas a pagar."],
       ["¿Puedo cancelar?", "Sí, cuando quieras, desde la sección Cuenta de la aplicación."],

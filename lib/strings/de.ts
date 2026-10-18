@@ -50,12 +50,24 @@ export const de: Strings = {
         b: "Cloud-KI-Anbieter bestimmen Preis, Grenzen und welches Modell du bekommst, und ändern das, wann es ihnen passt. Auf deinem Computer ändert sich nichts, solange du es nicht änderst.",
       },
       {
+        t: "Klug genug ist eine Linie, keine Rangliste.",
+        b: "Manche Aufgaben brauchen das klügste Modell, das es gibt. Die meisten nicht: einen Brief entwerfen, einen Bericht zusammenfassen, die Klausel im Vertrag finden. Sobald ein Modell die Latte für eine Aufgabe überspringt, zählt noch mehr Klugheit kaum, und es zählen Kosten, Datenschutz und wer das Sagen hat.",
+      },
+      {
         t: "Probier es so oft, wie du willst.",
         b: "Gute Ergebnisse entstehen durch Umformulieren, Wiederholen und Feinschliff. Wenn jeder Versuch abgerechnet wird, hältst du dich zurück. Auf deinem eigenen Rechner kostet der zehnte Versuch dasselbe wie der erste: nichts extra.",
       },
       {
         t: "Deine Dateien verlassen nie den Raum.",
         b: "Nichts, was du tippst oder öffnest, wird hochgeladen, also kann nichts durchsickern, und du musst niemandes Datenschutzerklärung vertrauen. Ist ein Modell installiert, braucht es überhaupt kein Internet.",
+      },
+      {
+        t: "Du mietest kein Modell. Der Rechner gehört dir.",
+        b: "Ein Modell ist nur eine Datei. Kommt ein besseres heraus, lädst du es herunter: derselbe Computer, kein neuer Vertrag. Das Modell, das du hast, ändert sich nie und verschwindet nie, es sei denn, du entscheidest es.",
+      },
+      {
+        t: "Jedes Jahr passt mehr auf deinen PC.",
+        b: "Vor ein paar Jahren konnte ein Heimcomputer kaum etwas Nützliches ausführen. Heute läuft auf einer gewöhnlichen Grafikkarte ein Modell, das den größten Teil der Alltagsarbeit erledigt, und jede neue Veröffentlichung holt mehr über diese Linie.",
       },
     ],
 
@@ -83,11 +95,11 @@ export const de: Strings = {
       },
       {
         t: "Aufgaben für wiederkehrende Arbeit",
-        b: "Speichere eine Arbeit, die du oft machst, etwa eine E-Mail beantworten oder aus Notizen ein Protokoll machen, mit eigenen Anweisungen. Dann fügst du ein, was du hast, und klickst auf Ausführen. Vier fertige Aufgaben helfen beim Einstieg.",
+        b: "Speichere eine Arbeit, die du oft machst, etwa eine E-Mail beantworten oder aus Notizen ein Protokoll machen, mit eigenen Anweisungen. Dann fügst du ein, was du hast, und klickst auf Ausführen. Sechs fertige Aufgaben sind zum Start dabei, und jede kann aus deinen eigenen Beispielen lernen: was hereinkam und welches Ergebnis du behalten hast.",
       },
       {
         t: "Bring ihm deinen Stil bei",
-        b: "Gib ihm einen Ordner mit deinen eigenen Texten, und es lernt, wie du zu klingen, und nutzt das in jeder Aufgabe. Dafür braucht es einen Windows-PC mit NVIDIA-Grafikkarte; die Funktion kommt bald mit einem Update.",
+        b: "Gib ihm Ordner oder Dateien mit deinen eigenen Texten, und es lernt, wie du zu klingen. Vorher liest es sie und warnt dich, wenn Texte anderer Leute dabei sind. Danach läuft jede Aufgabe in deinem Stil, und wechselst du zu einem anderen Modell, bringt es ihm deinen Stil von selbst noch einmal bei. Zum Beibringen brauchst du einen Windows-PC mit NVIDIA-Grafikkarte; es kommt bald mit einem Update.",
       },
       {
         t: "Vom Handy aus nutzen",
@@ -124,14 +136,14 @@ export const de: Strings = {
         price: "",
         per: "pro Monat",
         blurb: "Der Tarif für Privatpersonen zum Gründungspreis, fest, solange dein Abo läuft.",
-        points: ["Eine Person", "Bis zu 3 Computer", "Nur für die ersten 100"],
+        points: ["Eine Person", "Bis zu 2 Computer", "Nur für die ersten 100"],
       },
       {
         name: "Privatpersonen",
         price: "",
         per: "pro Monat",
         blurb: "Für eine Person auf ihren eigenen Computern.",
-        points: ["Eine Person", "Bis zu 3 Computer"],
+        points: ["Eine Person", "Bis zu 2 Computer"],
       },
       {
         name: "Kanzleien & Praxen",
@@ -146,7 +158,7 @@ export const de: Strings = {
       ["Gibt es eine Grenze, wie viel ich es nutzen kann?", "Nein. Es läuft auf deinem eigenen Computer, also gibt es keine Kosten pro Nachricht und kein Tageslimit. Nutze es, so viel du willst."],
       ["Wird etwas, das ich eingebe, an euch geschickt?", "Nein. Deine Fragen, Antworten und Dateien verlassen nie deinen Computer. Die App geht nur online, um Modelle herunterzuladen und dein Abo zu prüfen."],
       ["Was passiert nach den 14 Tagen?", "Die App pausiert, bis du ein Abo abschließt. Deine Modelle und Gespräche bleiben auf deinem Computer, und nichts wird gelöscht."],
-      ["Kann ich es auf mehreren Computern nutzen?", "Ja, auf bis zu 3 deiner Computer. Auf einem neuen öffnest du Konto und gibst die E-Mail-Adresse an, mit der du bezahlt hast; wir schicken dir einen 6-stelligen Code. Ist das Limit erreicht, zeigt die App deine Computer, damit du einen abmelden kannst. Ein Computer, der 60 Tage nicht genutzt wird, gibt seinen Platz von selbst frei."],
+      ["Kann ich es auf mehreren Computern nutzen?", "Ja, auf bis zu 2 deiner Computer. Auf einem neuen öffnest du Konto und gibst die E-Mail-Adresse an, mit der du bezahlt hast; wir schicken dir einen 6-stelligen Code. Ist das Limit erreicht, zeigt die App deine Computer, damit du einen abmelden kannst. Ein Computer, der 60 Tage nicht genutzt wird, gibt seinen Platz von selbst frei."],
       ["Funktioniert es offline?", "Ja. Deine Lizenz wird auf deinem Computer geprüft, ohne Internet. Sie erneuert sich, sobald du online bist. Nur ein Computer, der länger als etwa 35 Tage offline bleibt, muss einmal online gehen."],
       ["Steigen meine 8 $ später?", "Für die ersten 100 Mitglieder bleibt es bei 8 $ im Monat, solange das Abo läuft, auch wenn der Preis für neue Mitglieder steigt. Oder einmalig 100 $ für eine lebenslange Lizenz, danach nie wieder zahlen."],
       ["Kann ich kündigen?", "Ja, jederzeit, im Bereich Konto der App."],
