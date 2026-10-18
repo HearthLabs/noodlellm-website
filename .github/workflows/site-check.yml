@@ -12,6 +12,12 @@ jobs:
             curl -sS -o body.txt -D - -w "\n>> code=%{http_code} ip=%{remote_ip} time=%{time_total}\n" --max-time 25 "$u" || true
             head -c 600 body.txt; echo
           done
+          for u in https://github.com/HearthLabs/noodlellm-website/releases/latest/download/NoodleLLM-Setup.exe https://github.com/HearthLabs/noodlellm-website/releases/latest/download/NoodleLLM-mac.dmg; do
+            echo "=================== $u"
+            curl -sS -o /dev/null -L -r 0-0 -w ">> code=%{http_code} final=%{url_effective}\n" --max-time 25 "$u" || true
+          done
+          curl -sS https://api.github.com/repos/HearthLabs/noodlellm-website/releases | python3 -c "import json,sys; [print(r['tag_name'], [a['name'] for a in r['assets']]) for r in json.load(sys.stdin)]" || true
+          curl -sS https://api.github.com/repos/HearthLabs/noodlellm-website/releases/latest | python3 -c "import json,sys; print('LATEST', json.load(sys.stdin).get('tag_name'))" || true
           for h in noodlellm.com www.noodlellm.com noodletechnology.com www.noodletechnology.com; do echo "== dig $h"; dig +short $h; dig +short CNAME $h; done
           echo "== github pages direct with Host header"
           curl -sS -o /dev/null -w "code=%{http_code}\n" --resolve noodlellm.com:443:185.199.108.153 https://noodlellm.com/ || true
