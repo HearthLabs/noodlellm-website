@@ -89,11 +89,11 @@ export const en = {
       },
       {
         t: "Tasks for jobs you repeat",
-        b: "Save a job you do often, like answering an email or turning notes into minutes, with its own instructions. Then paste in what you have and press Run. Four ready-made tasks are there to start from.",
+        b: "Save a job you do often, like answering an email or turning notes into minutes, with its own instructions. Then paste in what you have and press Run. Six ready-made tasks are there to start from, and each one can be taught from examples of your own: what went in and the result you kept.",
       },
       {
         t: "Teach it your style",
-        b: "Give it a folder of your own writing and it learns to sound like you, then use what it learned in any task. Teaching needs a Windows PC with an NVIDIA graphics card, and arrives in an update soon.",
+        b: "Give it folders or files of your own writing and it learns to sound like you. It reads them first and warns you if they mix other people's writing in. Every task then runs in your style, and switching to another model teaches it your style again on its own. Teaching needs a Windows PC with an NVIDIA graphics card, and arrives in an update soon.",
       },
       {
         t: "Use it from your phone",

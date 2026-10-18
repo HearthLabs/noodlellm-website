@@ -83,11 +83,11 @@ export const de: Strings = {
       },
       {
         t: "Aufgaben für wiederkehrende Arbeit",
-        b: "Speichere eine Arbeit, die du oft machst, etwa eine E-Mail beantworten oder aus Notizen ein Protokoll machen, mit eigenen Anweisungen. Dann fügst du ein, was du hast, und klickst auf Ausführen. Vier fertige Aufgaben helfen beim Einstieg.",
+        b: "Speichere eine Arbeit, die du oft machst, etwa eine E-Mail beantworten oder aus Notizen ein Protokoll machen, mit eigenen Anweisungen. Dann fügst du ein, was du hast, und klickst auf Ausführen. Sechs fertige Aufgaben sind zum Start dabei, und jede kann aus deinen eigenen Beispielen lernen: was hereinkam und welches Ergebnis du behalten hast.",
       },
       {
         t: "Bring ihm deinen Stil bei",
-        b: "Gib ihm einen Ordner mit deinen eigenen Texten, und es lernt, wie du zu klingen, und nutzt das in jeder Aufgabe. Dafür braucht es einen Windows-PC mit NVIDIA-Grafikkarte; die Funktion kommt bald mit einem Update.",
+        b: "Gib ihm Ordner oder Dateien mit deinen eigenen Texten, und es lernt, wie du zu klingen. Vorher liest es sie und warnt dich, wenn Texte anderer Leute dabei sind. Danach läuft jede Aufgabe in deinem Stil, und wechselst du zu einem anderen Modell, bringt es ihm deinen Stil von selbst noch einmal bei. Zum Beibringen brauchst du einen Windows-PC mit NVIDIA-Grafikkarte; es kommt bald mit einem Update.",
       },
       {
         t: "Vom Handy aus nutzen",

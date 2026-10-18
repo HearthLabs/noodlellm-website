@@ -83,11 +83,11 @@ export const es: Strings = {
       },
       {
         t: "Tareas para lo que repites",
-        b: "Guarda un trabajo que haces a menudo, como responder un correo o convertir notas en un acta, con sus propias instrucciones. Luego pega lo que tienes y pulsa Ejecutar. Incluye cuatro tareas listas para empezar.",
+        b: "Guarda un trabajo que haces a menudo, como responder un correo o convertir notas en un acta, con sus propias instrucciones. Luego pega lo que tienes y pulsa Ejecutar. Hay seis tareas listas para empezar, y cada una puede aprender de tus propios ejemplos: lo que entró y el resultado que te quedaste.",
       },
       {
         t: "Enséñale tu estilo",
-        b: "Dale una carpeta con tus propios textos y aprende a sonar como tú, para usarlo en cualquier tarea. Enseñarle requiere un PC con Windows y una tarjeta gráfica NVIDIA, y llega pronto en una actualización.",
+        b: "Dale carpetas o archivos con tus propios textos y aprende a sonar como tú. Antes los lee y te avisa si se mezclan textos de otras personas. Después, cada tarea funciona con tu estilo, y al cambiar a otro modelo se lo vuelve a enseñar solo. Enseñar necesita un PC con Windows y tarjeta gráfica NVIDIA, y llega pronto en una actualización.",
       },
       {
         t: "Úsalo desde el móvil",
