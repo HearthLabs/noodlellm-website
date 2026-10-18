@@ -232,12 +232,6 @@ export function IndividualBlock({ locale }: { locale: Locale }) {
             <Card key={f.t} Icon={INDIVIDUAL_ICONS[i]} {...f} />
           ))}
         </div>
-        <p className="mt-6 max-w-3xl text-sm leading-relaxed text-ink-dim">
-          {t.practiceLine}{" "}
-          <Link href={href(locale, "/pricing")} className="text-accent underline-offset-4 hover:underline">
-            {t.practicePlan}
-          </Link>
-        </p>
       </div>
     </section>
     </>

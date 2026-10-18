@@ -43,7 +43,7 @@ export const es: Strings = {
     fromPrice: "desde 8 $ al mes",
 
     whyTitle: "Por qué ejecutarla tú",
-    whyIntro: "La nube es más lista, pero esa nunca fue toda la cuestión. Usa las dos. Guarda una IA en la nube como ChatGPT para el problema raro que necesita lo mejor de lo mejor, porque tu IA local puede ser peor que los modelos en la nube en preguntas de razonamiento difícil. Haz aquí lo cotidiano, lo privado y lo repetitivo: redactar una carta, resumir un informe, encontrar la cláusula en un contrato.",
+    whyIntro: "La nube es más lista, pero ese nunca fue el debate. Usa las dos. Guarda una IA en la nube como ChatGPT para los problemas complejos. Haz aquí las tareas cotidianas, privadas y repetitivas: redactar una carta, resumir un informe, encontrar la cláusula en un contrato.",
     why: [
       {
         t: "Ellos ponen las reglas. Tú te aguantas.",
@@ -65,9 +65,6 @@ export const es: Strings = {
 
     individualTitle: "Lo que hace por ti",
     individualIntro: "La app está en español, inglés, alemán, japonés y chino, y la mayoría de los modelos responden en el idioma en que escribas.",
-    practiceLine:
-      "Para un despacho o consulta: no se transmite nada, así que no hay ningún encargado del tratamiento que nombrar en un acuerdo de datos, y un plan Despachos cubre hasta 15 ordenadores en la oficina.",
-    practicePlan: "Ver el plan",
     individual: [
       {
         t: "Lee tus propios archivos",

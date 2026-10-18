@@ -49,7 +49,7 @@ export const en = {
     fromPrice: "from $8 a month",
 
     whyTitle: "Why run it yourself",
-    whyIntro: "The cloud is smarter, but that was never the whole question. Use both. Keep a cloud AI such as ChatGPT for the rare problem that needs the very best, since your local AI may be weaker at hard reasoning questions than cloud-based models. Do the everyday, the private and the repetitive here: drafting a letter, summarising a report, finding the clause in a contract.",
+    whyIntro: "The cloud is smarter, but that was never the debate. Use both. Keep a cloud AI such as ChatGPT for complex problems. Do the everyday, private and repetitive tasks here: drafting a letter, summarising a report, finding the clause in a contract.",
     why: [
       {
         t: "They set the terms. You live with them.",
@@ -71,9 +71,6 @@ export const en = {
 
     individualTitle: "What it does for you",
     individualIntro: "The app speaks English, German, Spanish, Japanese and Chinese, and most models answer in whichever language you write in.",
-    practiceLine:
-      "For a practice: nothing is transmitted, so there is no processor to name in a data agreement, and one Practices plan covers up to 15 computers in the office.",
-    practicePlan: "See the plan",
     individual: [
       {
         t: "It reads your own files",

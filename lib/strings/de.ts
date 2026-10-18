@@ -43,7 +43,7 @@ export const de: Strings = {
     fromPrice: "ab 8 $ im Monat",
 
     whyTitle: "Warum selbst betreiben",
-    whyIntro: "Die Cloud ist klüger, aber darum ging es nie allein. Nutze beides. Behalte eine Cloud-KI wie ChatGPT für das seltene Problem, das wirklich das Beste braucht, denn deine lokale KI ist bei schwierigen Denkfragen womöglich schwächer als Cloud-Modelle. Erledige das Alltägliche, das Vertrauliche und das Wiederkehrende hier: einen Brief entwerfen, einen Bericht zusammenfassen, die Klausel in einem Vertrag finden.",
+    whyIntro: "Die Cloud ist klüger, aber darum ging es nie. Nutze beides. Behalte eine Cloud-KI wie ChatGPT für komplexe Probleme. Erledige die alltäglichen, vertraulichen und wiederkehrenden Aufgaben hier: einen Brief entwerfen, einen Bericht zusammenfassen, die Klausel in einem Vertrag finden.",
     why: [
       {
         t: "Sie machen die Regeln. Du musst damit leben.",
@@ -65,9 +65,6 @@ export const de: Strings = {
 
     individualTitle: "Was es für dich tut",
     individualIntro: "Die App gibt es auf Deutsch, Englisch, Spanisch, Japanisch und Chinesisch, und die meisten Modelle antworten in der Sprache, in der du schreibst.",
-    practiceLine:
-      "Für eine Kanzlei oder Praxis: Es wird nichts übertragen, also gibt es keinen Auftragsverarbeiter, den ein Datenschutzvertrag nennen müsste, und ein Abo „Kanzleien & Praxen“ deckt bis zu 15 Computer im Büro ab.",
-    practicePlan: "Zum Abo",
     individual: [
       {
         t: "Es liest deine eigenen Dateien",
