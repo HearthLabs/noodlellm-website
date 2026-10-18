@@ -28,7 +28,6 @@ export const zh: Strings = {
     privacy: "隐私",
     terms: "条款",
     rights: (year, company) => `© ${year} ${company}`,
-    llc: "美国西弗吉尼亚州有限责任公司",
   },
 
   home: {

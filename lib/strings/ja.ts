@@ -28,7 +28,6 @@ export const ja: Strings = {
     privacy: "プライバシー",
     terms: "利用規約",
     rights: (year, company) => `© ${year} ${company}`,
-    llc: "米国ウェストバージニア州の有限責任会社",
   },
 
   home: {

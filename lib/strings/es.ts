@@ -29,7 +29,6 @@ export const es: Strings = {
     privacy: "Privacidad",
     terms: "Condiciones",
     rights: (year, company) => `© ${year} ${company}`,
-    llc: "Una sociedad de responsabilidad limitada de Virginia Occidental",
   },
 
   home: {

@@ -95,7 +95,6 @@ export default function Shell({ locale, children }: { locale: Locale; children: 
               <a href={SITE.companyUrl} className="hover:text-ink">
                 {t.footer.rights(new Date().getFullYear(), SITE.company)}
               </a>
-              <span>{t.footer.llc}</span>
             </div>
           </div>
         </footer>

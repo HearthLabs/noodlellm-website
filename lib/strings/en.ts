@@ -35,7 +35,6 @@ export const en = {
     privacy: "Privacy",
     terms: "Terms",
     rights: (year: number, company: string) => `© ${year} ${company}`,
-    llc: "A West Virginia limited liability company",
   },
 
   home: {

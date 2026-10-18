@@ -29,7 +29,6 @@ export const de: Strings = {
     privacy: "Datenschutz",
     terms: "AGB",
     rights: (year, company) => `© ${year} ${company}`,
-    llc: "Eine Limited Liability Company nach dem Recht von West Virginia",
   },
 
   home: {
