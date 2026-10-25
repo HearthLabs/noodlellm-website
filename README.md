@@ -16,6 +16,12 @@ npm run build      # static site in out/
   to `main` rebuilds it (`.github/workflows/publish.yml`), keeping `CNAME`, `.nojekyll` and,
   while the site is private, `gate.js` and its `robots.txt`.
 
+## The model catalog
+
+`public/catalog.json` is the list of models the desktop app shows in its store, served at
+https://noodlellm.com/catalog.json. Do not edit it here: it is written by the "Publish
+catalog" workflow in HearthLabs/noodlellm whenever `catalog/catalog.seed.json` changes there.
+
 ## Installers
 
 The download buttons link to this repo's GitHub Releases (`NoodleLLM-Setup.exe`,
