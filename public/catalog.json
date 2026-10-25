@@ -1,7 +1,7 @@
 {
   "$comment": "Local seed catalog. Mirrors the Supabase models/model_files schema so the desktop app works before Supabase exists. download_url points at Hugging Face so downloads are real today; these become R2 signed URLs later. Entries with measured:true carry VRAM figures and checksums taken on real hardware with scripts/measure-model.ps1 — see measured_note for the card and the numbers. Entries with measured:false are estimated from file size and the UI tells the user so; do not flip that flag without measuring, because a size-based estimate for the 0.5B was 60% too high. A null sha256 means the download manager cannot verify the file: acceptable in development, never in production.",
-  "version": 13,
-  "generated_at": "2026-10-25T05:21:06+00:00",
+  "version": 14,
+  "generated_at": "2026-10-25T05:35:09+00:00",
   "measured_on": "NVIDIA RTX 3060 Ti (8GB) — the 16GB and 24GB tiers are estimated, not measured",
   "models": [
     {
