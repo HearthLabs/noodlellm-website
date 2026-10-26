@@ -8,10 +8,13 @@ export const de: Strings = {
     pricingTitle: "Preise",
     pricingDescription: (app) =>
       `Was ${app} kostet: 14 Tage zum Ausprobieren, danach ein Abo. Gründerpreis für die ersten 100.`,
+    catalogTitle: "Modellkatalog",
+    catalogDescription: (app) => `Alle KI-Modelle, die Sie in ${app} installieren können: wofür sie gut sind und wie viel Arbeitsspeicher sie brauchen.`,
   },
 
   nav: {
     pricing: "Preise",
+    catalog: "Katalog",
     download: "Herunterladen",
     language: "Sprache",
     alsoIn: (language) => `Diese Seite gibt es auch auf ${language}.`,
@@ -25,6 +28,7 @@ export const de: Strings = {
     product: "Produkt",
     legal: "Rechtliches",
     pricing: "Preise",
+    catalog: "Katalog",
     privacy: "Datenschutz",
     terms: "AGB",
     rights: (year, company) => `© ${year} ${company}`,
@@ -160,6 +164,20 @@ export const de: Strings = {
       ["Wir sind eine Kanzlei. Braucht jede Person ein Abo?", "Nein. Der Tarif für Kanzleien & Praxen gilt für bis zu 15 Computer an einem Standort, zu einem Preis."],
     ],
     ctaDownload: "Herunterladen und die 14 Tage starten",
+  },
+
+  catalog: {
+    title: "Modellkatalog",
+    lead: "Alle Modelle, die Sie im Store der App installieren können. Jedes läuft vollständig auf Ihrem Computer. Die App prüft, welche Ihr Rechner ausführen kann, bevor Sie etwas herunterladen.",
+    by: (creator) => `von ${creator}`,
+    size: "Downloadgröße",
+    ram: "Benötigter Arbeitsspeicher",
+    gb: (n) => `${n} GB`,
+    gbRange: (a, b) => `${a}–${b} GB`,
+    ramAtLeast: (n) => `ab ${n} GB`,
+    vision: "Kann Bilder und Screenshots lesen",
+    note: "Die Größen reichen von der kleinsten bis zur genauesten Version jedes Modells; die App wählt die passende für Ihren Computer. Der Arbeitsspeicher gilt für die kleinste Version. Eine Grafikkarte macht sie schneller, ist aber nicht nötig.",
+    cta: "App herunterladen",
   },
 
   notFound: {

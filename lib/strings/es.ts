@@ -8,10 +8,13 @@ export const es: Strings = {
     pricingTitle: "Precios",
     pricingDescription: (app) =>
       `Lo que cuesta ${app}: 14 días para probarlo y después una suscripción. Precio de fundador para los 100 primeros.`,
+    catalogTitle: "Catálogo de modelos",
+    catalogDescription: (app) => `Todos los modelos de IA que puede instalar en ${app}, para qué sirve cada uno y cuánta memoria necesita.`,
   },
 
   nav: {
     pricing: "Precios",
+    catalog: "Catálogo",
     download: "Descargar",
     language: "Idioma",
     alsoIn: (language) => `Esta página también está en ${language}.`,
@@ -25,6 +28,7 @@ export const es: Strings = {
     product: "Producto",
     legal: "Legal",
     pricing: "Precios",
+    catalog: "Catálogo",
     privacy: "Privacidad",
     terms: "Condiciones",
     rights: (year, company) => `© ${year} ${company}`,
@@ -161,6 +165,20 @@ export const es: Strings = {
       ["Somos un despacho. ¿Necesitamos una suscripción cada uno?", "No. El plan Despachos cubre hasta 15 ordenadores de una oficina por un solo precio."],
     ],
     ctaDownload: "Descárgalo y empieza los 14 días",
+  },
+
+  catalog: {
+    title: "Catálogo de modelos",
+    lead: "Todos los modelos que puede instalar desde la tienda de la aplicación. Todos funcionan por completo en su ordenador. La aplicación comprueba cuáles puede ejecutar su equipo antes de que descargue nada.",
+    by: (creator) => `de ${creator}`,
+    size: "Tamaño de descarga",
+    ram: "Memoria necesaria",
+    gb: (n) => `${n} GB`,
+    gbRange: (a, b) => `${a}–${b} GB`,
+    ramAtLeast: (n) => `${n} GB o más`,
+    vision: "Puede leer imágenes y capturas de pantalla",
+    note: "Los tamaños van de la versión más pequeña a la más precisa de cada modelo; la aplicación elige la que mejor se adapta a su ordenador. La memoria corresponde a la versión más pequeña. Una tarjeta gráfica los hace más rápidos, pero no es necesaria.",
+    cta: "Descargar la aplicación",
   },
 
   notFound: {

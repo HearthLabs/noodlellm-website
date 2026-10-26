@@ -14,10 +14,13 @@ export const en = {
     pricingTitle: "Pricing",
     pricingDescription: (app: string) =>
       `What ${app} costs: 14 days to try it, then a subscription. Founding rate for the first 100.`,
+    catalogTitle: "Model catalog",
+    catalogDescription: (app: string) => `Every AI model you can install in ${app}, what each is good at, and how much memory it needs.`,
   },
 
   nav: {
     pricing: "Pricing",
+    catalog: "Catalog",
     download: "Download",
     language: "Language",
     alsoIn: (language: string) => `This page is also in ${language}.`,
@@ -31,6 +34,7 @@ export const en = {
     product: "Product",
     legal: "Legal",
     pricing: "Pricing",
+    catalog: "Catalog",
     privacy: "Privacy",
     terms: "Terms",
     rights: (year: number, company: string) => `© ${year} ${company}`,
@@ -166,6 +170,20 @@ export const en = {
       ["We are a firm. Do we each need a subscription?", "No. The Practices plan covers up to 15 computers in one office for one price."],
     ],
     ctaDownload: "Download it and start the 14 days",
+  },
+
+  catalog: {
+    title: "Model catalog",
+    lead: "Every model you can install from the app's store. Each one runs entirely on your computer. The app checks which ones your machine can run before you download anything.",
+    by: (creator: string) => `by ${creator}`,
+    size: "Download size",
+    ram: "Memory needed",
+    gb: (n: number) => `${n} GB`,
+    gbRange: (a: number, b: number) => `${a}–${b} GB`,
+    ramAtLeast: (n: number) => `${n} GB or more`,
+    vision: "Can read images and screenshots",
+    note: "Sizes go from the smallest to the most precise version of each model; the app picks the one that suits your computer. Memory is for the smallest version. A graphics card makes them faster but is not required.",
+    cta: "Download the app",
   },
 
   notFound: {
