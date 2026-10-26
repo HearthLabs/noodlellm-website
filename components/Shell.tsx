@@ -49,7 +49,7 @@ export default function Shell({ locale, children }: { locale: Locale; children: 
                 {t.nav.pricing}
               </Link>
               <LanguageMenu locale={locale} label={t.nav.language} />
-              {/* The homepage's download buttons, not a file: they offer Windows and Mac and their warnings. */}
+              {/* The homepage's download buttons, not a file: they offer Windows and its warning, and say Mac is coming soon. */}
               <Link
                 href={`${href(locale, "/")}#download`}
                 className="rounded-md bg-accent px-3 py-1.5 font-medium text-surface-0 hover:brightness-110"

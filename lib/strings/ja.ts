@@ -17,7 +17,6 @@ export const ja: Strings = {
     switchTo: (language) => `${language}で読む`,
     dismiss: "閉じる",
     smartscreen: "初回は Windows に警告されることがあります。［詳細情報］をクリックし、［実行］を選んでください。",
-    gatekeeper: "初回は Mac に止められることがあります。システム設定の「プライバシーとセキュリティ」を開き、「このまま開く」をクリックしてください。",
   },
 
   footer: {
@@ -35,8 +34,8 @@ export const ja: Strings = {
     heroBody: (app) =>
       `${app} は、AI モデルを他社のサーバーではなく、あなた自身のパソコンで動かします。入力した内容がパソコンの外に出ることはなく、インターネットを切っても動き続け、使った量で課金されることもありません。文章を書き、要約し、自分の文書について尋ねられます。`,
     download: "Windows 版をダウンロード",
-    downloadMac: "Mac 版をダウンロード",
-    requires: "Windows 10 または 11、または Apple シリコン搭載の Mac（M1 以降）。6 GB 以上のグラフィックボードがあると快適です。なくても動きますが、遅くなります。",
+    macSoon: "Mac 版は近日公開",
+    requires: "Windows 10 または 11。6 GB 以上のグラフィックボードがあると快適です。なくても動きますが、遅くなります。",
     trial: "14 日間のお試し、その後は",
     fromPrice: "月額 8 ドルから",
 

@@ -17,7 +17,6 @@ export const zh: Strings = {
     switchTo: (language) => `切换到${language}`,
     dismiss: "不用了",
     smartscreen: "首次运行时 Windows 可能会发出警告。点击“更多信息”，然后点击“仍要运行”。",
-    gatekeeper: "第一次打开时 Mac 可能会阻止它。打开“系统设置”，进入“隐私与安全性”，点按“仍要打开”。",
   },
 
   footer: {
@@ -35,8 +34,8 @@ export const zh: Strings = {
     heroBody: (app) =>
       `${app} 让 AI 模型在你自己的电脑上运行，而不是在别人的服务器上。你输入的内容不会离开你的电脑，断网也能照常使用，用多少都不计量收费。用它写作、做总结，询问你自己的文档。`,
     download: "下载 Windows 版",
-    downloadMac: "下载 Mac 版",
-    requires: "Windows 10 或 11，或搭载 Apple 芯片（M1 或更新）的 Mac。最好有 6 GB 以上显存的显卡；没有显卡也能运行，只是较慢。",
+    macSoon: "Mac 版即将推出",
+    requires: "Windows 10 或 11。最好有 6 GB 以上显存的显卡；没有显卡也能运行，只是较慢。",
     trial: "免费试用 14 天，之后",
     fromPrice: "每月 8 美元起",
 
