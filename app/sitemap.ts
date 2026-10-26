@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const pages: [string, number][] = [
     ["/", 1],
+    ["/catalog", 0.8],
     ["/pricing", 0.8],
   ];
 

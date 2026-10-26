@@ -7,10 +7,13 @@ export const zh: Strings = {
       "一款在你自己电脑上运行 AI 模型的桌面应用。它会检查你的电脑实际能运行什么，一键安装，而且从不把你的对话发送到任何地方。",
     pricingTitle: "价格",
     pricingDescription: (app) => `${app} 的价格：先免费试用 14 天，之后订阅，按月或按年付款。前 100 位享创始价。`,
+    catalogTitle: "模型目录",
+    catalogDescription: (app) => `可以在 ${app} 中安装的所有 AI 模型、各自擅长什么，以及需要多少内存。`,
   },
 
   nav: {
     pricing: "价格",
+    catalog: "目录",
     download: "下载",
     language: "语言",
     alsoIn: (language) => `本页面也有${language}版本。`,
@@ -24,6 +27,7 @@ export const zh: Strings = {
     product: "产品",
     legal: "法律",
     pricing: "价格",
+    catalog: "目录",
     privacy: "隐私",
     terms: "条款",
     rights: (year, company) => `© ${year} ${company}`,
@@ -159,6 +163,20 @@ export const zh: Strings = {
       ["我们是一家事务所，每个人都要单独订阅吗？", "不用。事务所方案以一个价格覆盖同一办公室最多 15 台电脑。"],
     ],
     ctaDownload: "下载并开始 14 天试用",
+  },
+
+  catalog: {
+    title: "模型目录",
+    lead: "可以从应用商店安装的所有模型。每个模型都完全在你的电脑上运行。下载之前，应用会先检查你的电脑能运行哪些模型。",
+    by: (creator) => `来自 ${creator}`,
+    size: "下载大小",
+    ram: "所需内存",
+    gb: (n) => `${n} GB`,
+    gbRange: (a, b) => `${a}–${b} GB`,
+    ramAtLeast: (n) => `${n} GB 或以上`,
+    vision: "能读取图片和截图",
+    note: "大小从每个模型最小的版本到最精确的版本不等；应用会挑选适合你电脑的那一个。内存按最小的版本计算。有显卡会更快，但不是必需的。",
+    cta: "下载应用",
   },
 
   notFound: {

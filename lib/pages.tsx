@@ -5,6 +5,7 @@ import Home from "@/components/pages/Home";
 import Moved from "@/components/pages/Moved";
 import SubscribeSuccess from "@/components/pages/SubscribeSuccess";
 import Pricing from "@/components/pages/Pricing";
+import Catalog from "@/components/pages/Catalog";
 import Legal from "@/components/pages/Legal";
 
 /**
@@ -56,6 +57,16 @@ export function pricingMetadata(locale: Locale): Metadata {
   };
 }
 export const pricingPage = (locale: Locale) => <Pricing locale={locale} />;
+
+export function catalogMetadata(locale: Locale): Metadata {
+  const t = strings(locale).meta;
+  return {
+    title: t.catalogTitle,
+    description: t.catalogDescription(SITE.name),
+    alternates: alternates(locale, "/catalog"),
+  };
+}
+export const catalogPage = (locale: Locale) => <Catalog locale={locale} />;
 
 /**
  * Addresses that used to be pages: Download, Individuals, Practices, Licences and the

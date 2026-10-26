@@ -20,6 +20,7 @@ export default function Shell({ locale, children }: { locale: Locale; children: 
     {
       title: t.footer.product,
       links: [
+        { label: t.footer.catalog, href: href(locale, "/catalog") },
         { label: t.footer.pricing, href: href(locale, "/pricing") },
       ],
     },
@@ -45,6 +46,9 @@ export default function Shell({ locale, children }: { locale: Locale; children: 
               {SITE.name}
             </Link>
             <nav className="flex items-center gap-5 text-sm text-ink-dim">
+              <Link href={href(locale, "/catalog")} className="hidden hover:text-ink sm:inline">
+                {t.nav.catalog}
+              </Link>
               <Link href={href(locale, "/pricing")} className="hidden hover:text-ink sm:inline">
                 {t.nav.pricing}
               </Link>

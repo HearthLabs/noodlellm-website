@@ -7,10 +7,13 @@ export const ja: Strings = {
       "AI モデルを自分のパソコンで動かすデスクトップアプリ。お使いのパソコンで実際に何が動くかを確認し、ワンクリックでインストール。会話をどこかへ送ることは一切ありません。",
     pricingTitle: "料金",
     pricingDescription: (app) => `${app} の料金：14 日間お試し、その後はサブスクリプション。先着 100 名は創設メンバー価格。`,
+    catalogTitle: "モデルカタログ",
+    catalogDescription: (app) => `${app} でインストールできるすべての AI モデルと、それぞれの得意なこと、必要なメモリ。`,
   },
 
   nav: {
     pricing: "料金",
+    catalog: "カタログ",
     download: "ダウンロード",
     language: "言語",
     alsoIn: (language) => `このページは${language}でも読めます。`,
@@ -24,6 +27,7 @@ export const ja: Strings = {
     product: "製品",
     legal: "法的情報",
     pricing: "料金",
+    catalog: "カタログ",
     privacy: "プライバシー",
     terms: "利用規約",
     rights: (year, company) => `© ${year} ${company}`,
@@ -159,6 +163,20 @@ export const ja: Strings = {
       ["事務所で使う場合、一人ずつ登録が必要ですか？", "いいえ。事務所プランなら、1 つの事務所でパソコン 15 台までをひとつの料金で利用できます。"],
     ],
     ctaDownload: "ダウンロードして 14 日間のお試しを始める",
+  },
+
+  catalog: {
+    title: "モデルカタログ",
+    lead: "アプリのストアからインストールできるすべてのモデルです。どれもすべてお使いのコンピューター上で動きます。ダウンロードする前に、アプリがどのモデルを動かせるかを確認します。",
+    by: (creator) => `提供：${creator}`,
+    size: "ダウンロードサイズ",
+    ram: "必要なメモリ",
+    gb: (n) => `${n} GB`,
+    gbRange: (a, b) => `${a}～${b} GB`,
+    ramAtLeast: (n) => `${n} GB 以上`,
+    vision: "画像やスクリーンショットを読み取れます",
+    note: "サイズは各モデルの最も小さい版から最も精度の高い版までです。アプリがお使いのコンピューターに合う版を選びます。メモリは最も小さい版の値です。グラフィックカードがあると速くなりますが、必須ではありません。",
+    cta: "アプリをダウンロード",
   },
 
   notFound: {
