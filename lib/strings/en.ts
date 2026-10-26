@@ -24,7 +24,6 @@ export const en = {
     switchTo: (language: string) => `Read it in ${language}`,
     dismiss: "No thanks",
     smartscreen: "Windows may warn you the first time. Click More info, then Run anyway.",
-    gatekeeper: "Your Mac may refuse the first time. Open System Settings, then Privacy & Security, and click Open Anyway.",
   },
 
   footer: {
@@ -42,8 +41,8 @@ export const en = {
     heroBody: (app: string) =>
       `${app} runs AI models on your own computer instead of someone else's servers. Nothing you type leaves your machine, it keeps working with the internet off, and there is no meter on how much you use it. Write with it, summarise with it, and ask it about your own documents.`,
     download: "Download for Windows",
-    downloadMac: "Download for Mac",
-    requires: "Windows 10 or 11, or a Mac with Apple Silicon (M1 or newer). Best with a graphics card with 6 GB or more; without one it still runs, slowly.",
+    macSoon: "Mac: coming soon",
+    requires: "Windows 10 or 11. Best with a graphics card with 6 GB or more; without one it still runs, slowly.",
     trial: "14 days to try it, then",
     fromPrice: "from $8 a month",
 

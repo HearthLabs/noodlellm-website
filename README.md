@@ -24,5 +24,6 @@ catalog" workflow in HearthLabs/noodlellm whenever `catalog/catalog.seed.json` c
 
 ## Installers
 
-The download buttons link to this repo's GitHub Releases (`NoodleLLM-Setup.exe`,
-`NoodleLLM-mac.dmg`), so releases stay here.
+The download button links to this repo's GitHub Releases (`NoodleLLM-Setup.exe`), so releases
+stay here. The Mac shows as coming soon; `NoodleLLM-mac.dmg` stays on the release but nothing
+links to it.

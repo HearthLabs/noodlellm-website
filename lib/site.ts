@@ -8,5 +8,4 @@ export const SITE = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://noodlellm.com",
   // The download buttons point straight here: GitHub serves the newest release's file.
   installerUrl: "https://github.com/HearthLabs/noodlellm-website/releases/latest/download/NoodleLLM-Setup.exe",
-  macInstallerUrl: "https://github.com/HearthLabs/noodlellm-website/releases/latest/download/NoodleLLM-mac.dmg",
 };

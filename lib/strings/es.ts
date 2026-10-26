@@ -18,7 +18,6 @@ export const es: Strings = {
     switchTo: (language) => `Leerla en ${language}`,
     dismiss: "No, gracias",
     smartscreen: "Puede que Windows te avise la primera vez. Haz clic en Más información y luego en Ejecutar de todas formas.",
-    gatekeeper: "Puede que tu Mac lo bloquee la primera vez. Abre Ajustes del Sistema, luego Privacidad y seguridad, y haz clic en Abrir igualmente.",
   },
 
   footer: {
@@ -36,8 +35,8 @@ export const es: Strings = {
     heroBody: (app) =>
       `${app} ejecuta modelos de IA en tu propio ordenador en lugar de en los servidores de otros. Nada de lo que escribes sale de tu equipo, sigue funcionando sin internet y no hay contador de cuánto lo usas. Escribe con él, resume con él y pregúntale por tus propios documentos.`,
     download: "Descargar para Windows",
-    downloadMac: "Descargar para Mac",
-    requires: "Windows 10 u 11, o un Mac con Apple Silicon (M1 o posterior). Mejor con una tarjeta gráfica de 6 GB o más; sin ella también funciona, pero despacio.",
+    macSoon: "Mac: próximamente",
+    requires: "Windows 10 u 11. Mejor con una tarjeta gráfica de 6 GB o más; sin ella también funciona, pero despacio.",
     trial: "14 días para probarlo, después",
     fromPrice: "desde 8 $ al mes",
 

@@ -18,7 +18,6 @@ export const de: Strings = {
     switchTo: (language) => `Auf ${language} lesen`,
     dismiss: "Nein danke",
     smartscreen: "Windows warnt dich beim ersten Mal vielleicht. Klicke auf Weitere Informationen und dann auf Trotzdem ausführen.",
-    gatekeeper: "Dein Mac blockiert es beim ersten Mal vielleicht. Öffne die Systemeinstellungen, dann Datenschutz & Sicherheit, und klicke auf Trotzdem öffnen.",
   },
 
   footer: {
@@ -36,8 +35,8 @@ export const de: Strings = {
     heroBody: (app) =>
       `${app} führt KI-Modelle auf deinem eigenen Computer aus statt auf den Servern anderer. Nichts, was du eingibst, verlässt deinen Rechner, es läuft auch ohne Internet weiter, und kein Zähler misst, wie viel du es nutzt. Schreib damit, fass damit zusammen und frag es zu deinen eigenen Dokumenten.`,
     download: "Für Windows herunterladen",
-    downloadMac: "Für Mac herunterladen",
-    requires: "Windows 10 oder 11, oder ein Mac mit Apple Silicon (M1 oder neuer). Am besten mit einer Grafikkarte ab 6 GB; ohne läuft es auch, nur langsam.",
+    macSoon: "Mac: kommt bald",
+    requires: "Windows 10 oder 11. Am besten mit einer Grafikkarte ab 6 GB; ohne läuft es auch, nur langsam.",
     trial: "14 Tage zum Ausprobieren, danach",
     fromPrice: "ab 8 $ im Monat",
 

@@ -108,29 +108,25 @@ function Card({ Icon, t, b }: { Icon: () => React.JSX.Element; t: string; b: str
 }
 
 /**
- * Downloads the installer directly, Windows first and the Mac beside it, with each system's
- * first-run warning said up front.
+ * Downloads the Windows installer directly, with its first-run warning said up front. The Mac
+ * build is not offered yet, so it shows as coming soon instead of a link.
  */
 function DownloadButton({ locale, label }: { locale: Locale; label: string }) {
   const t = strings(locale);
   return (
     <div>
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap items-center gap-3">
         <a
           href={SITE.installerUrl}
           className="inline-block rounded-md bg-accent px-6 py-3 font-medium text-surface-0 hover:brightness-110"
         >
           {label}
         </a>
-        <a
-          href={SITE.macInstallerUrl}
-          className="inline-block rounded-md border border-edge px-6 py-3 font-medium text-ink hover:bg-surface-2"
-        >
-          {t.home.downloadMac}
-        </a>
+        <span className="inline-block cursor-default rounded-md border border-edge px-6 py-3 font-medium text-ink-faint">
+          {t.home.macSoon}
+        </span>
       </div>
       <p className="mt-2 text-xs text-ink-faint">{t.nav.smartscreen}</p>
-      <p className="mt-1 text-xs text-ink-faint">{t.nav.gatekeeper}</p>
     </div>
   );
 }
