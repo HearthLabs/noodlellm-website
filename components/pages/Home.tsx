@@ -1,5 +1,5 @@
 import type { Locale } from "@/lib/i18n";
-import { Hero, IndividualBlock, Shot, Why } from "@/components/sections";
+import { Hero, IndividualBlock, Why } from "@/components/sections";
 
 /**
  * The homepage, and the only page that says what the app does.
@@ -15,7 +15,6 @@ export default function Home({ locale }: { locale: Locale }) {
       <Hero locale={locale} />
       <IndividualBlock locale={locale} />
       <Why locale={locale} />
-      <Shot locale={locale} />
     </main>
   );
 }

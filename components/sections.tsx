@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
 import { href, strings, type Locale } from "@/lib/i18n";
+import PreviewTabs from "@/components/PreviewTabs";
 
 /**
  * The sections the homepage is built from.
@@ -95,21 +95,36 @@ function IconMemory() {
 }
 // The icons pair with the cards in the strings by position; the words are per language,
 // the pictures are not.
-const INDIVIDUAL_ICONS = [IconFiles, IconMemory, IconUnlimited, IconEasy, IconTeach, IconPhone];
+const INDIVIDUAL_ICONS = [IconFiles, IconMemory, IconEasy, IconUnlimited, IconPhone, IconTeach];
 
-function Card({ Icon, t, b }: { Icon: () => React.JSX.Element; t: string; b: string }) {
+// The screenshots under the download, in the order of `home.preview` in the strings.
+const PREVIEW_SHOTS = [
+  { src: "/shots/install.webp", width: 1400, height: 878 },
+  { src: "/shots/model-store.webp", width: 1140, height: 565 },
+  { src: "/shots/app.webp", width: 2560, height: 1640 },
+  { src: "/shots/your-style.webp", width: 806, height: 430 },
+  // A phone screen is tall and narrow, so it is shown at phone size, centred.
+  { src: "/shots/phone.webp", width: 645, height: 650, narrow: true },
+];
+
+function Card({ Icon, t, b, soon }: { Icon: () => React.JSX.Element; t: string; b: string; soon?: string }) {
   return (
     <div className="rounded-lg border border-edge bg-surface-1 p-5">
-      <Icon />
-      <h3 className="mt-3 text-sm font-medium">{t}</h3>
+      <div className="flex items-center justify-between">
+        <Icon />
+        {soon && (
+          <span className="rounded bg-surface-2 px-2 py-0.5 text-[11px] font-medium text-accent">{soon}</span>
+        )}
+      </div>
+      <h3 className="mt-3 text-base font-medium">{t}</h3>
       <p className="mt-1.5 text-sm leading-relaxed text-ink-dim">{b}</p>
     </div>
   );
 }
 
 /**
- * Downloads the Windows installer directly, with its first-run warning said up front. The Mac
- * build is not offered yet, so it shows as coming soon instead of a link.
+ * Downloads the Windows installer directly. The Mac build is not offered yet, so it shows as
+ * coming soon instead of a link. The first-run warning sits under the price, folded away.
  */
 function DownloadButton({ locale, label }: { locale: Locale; label: string }) {
   const t = strings(locale);
@@ -126,7 +141,6 @@ function DownloadButton({ locale, label }: { locale: Locale; label: string }) {
           {t.home.macSoon}
         </span>
       </div>
-      <p className="mt-2 text-xs text-ink-faint">{t.nav.smartscreen}</p>
     </div>
   );
 }
@@ -137,7 +151,12 @@ export function Hero({ locale }: { locale: Locale }) {
   return (
     <>
     {/* ----------------------------------------------------------------- hero */}
-    <section className="mx-auto max-w-5xl px-6 pt-24 pb-16">
+    <section className="mx-auto max-w-5xl px-6 pt-20 pb-16">
+      <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-edge bg-surface-1 px-3 py-1 text-xs text-ink-dim">
+        <span className="h-2 w-2 rounded-full bg-emerald-400" />
+        <span>{t.heroBadge}</span>
+      </div>
+
       <h1 className="max-w-4xl text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl">
         {t.heroTitle}
       </h1>
@@ -147,16 +166,34 @@ export function Hero({ locale }: { locale: Locale }) {
       </p>
 
 
-      <div id="download" className="mt-9 scroll-mt-6">
+      <div id="download" className="mt-9 scroll-mt-20">
         <DownloadButton locale={locale} label={t.download} />
-        <p className="mt-1 text-xs text-ink-faint">{t.requires}</p>
-        <p className="mt-3 text-sm text-ink-faint">
+        <p className="mt-3 text-sm text-ink-dim">
           {t.trial}{" "}
           <Link href={href(locale, "/pricing")} className="underline underline-offset-4 hover:text-ink">
             {t.fromPrice}
           </Link>
         </p>
+        <p className="mt-1.5 text-xs text-ink-faint">{t.requires}</p>
+        <details className="group mt-3">
+          <summary className="cursor-pointer list-none text-xs text-ink-faint underline underline-offset-4 hover:text-ink-dim [&::-webkit-details-marker]:hidden">
+            {t.installHelp}
+          </summary>
+          <p className="mt-2.5 max-w-xl rounded-lg border border-edge bg-surface-1 p-3.5 text-xs text-ink-dim">
+            {strings(locale).nav.smartscreen}
+          </p>
+        </details>
       </div>
+
+      <PreviewTabs
+        shots={t.preview.map((p, i) => ({
+          tab: p.tab,
+          title: p.title,
+          body: p.body(SITE.name),
+          alt: p.alt(SITE.name),
+          ...PREVIEW_SHOTS[i],
+        }))}
+      />
     </section>
     </>
   );
@@ -169,7 +206,7 @@ export function Why({ locale }: { locale: Locale }) {
     <>
     {/* ------------------------------------------------- the argument, in full */}
     {/* Numbered boxes in the same style as the cards above, so the page reads as one piece. */}
-    <section className="border-y border-edge bg-surface-1/40">
+    <section id="why-local">
       <div className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">{t.whyTitle}</h2>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-dim">{t.whyIntro}</p>
@@ -180,7 +217,7 @@ export function Why({ locale }: { locale: Locale }) {
               <span aria-hidden className="text-sm font-semibold tabular-nums text-accent">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-3 text-sm font-medium">{point.t}</h3>
+              <h3 className="mt-3 text-base font-medium">{point.t}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-ink-dim">{point.b}</p>
             </li>
           ))}
@@ -192,40 +229,19 @@ export function Why({ locale }: { locale: Locale }) {
 }
 
 
-export function Shot({ locale }: { locale: Locale }) {
-  const t = strings(locale).home;
-  return (
-    <>
-    {/* ------------------------------------------------------------ the product */}
-    {/* A chat using the person's own files and a skill: the screen people come back to every day. */}
-    <section className="mx-auto max-w-5xl px-6 pt-20 pb-20">
-      <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">{t.shotTitle}</h2>
-      <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-dim">{t.shotBody}</p>
-      <Image
-        src="/shots/app.webp"
-        alt={t.shotAlt(SITE.name)}
-        width={1280}
-        height={820}
-        className="mt-10 rounded-xl border border-edge shadow-2xl shadow-black/40"
-      />
-    </section>
-    </>
-  );
-}
-
 
 export function IndividualBlock({ locale }: { locale: Locale }) {
   const t = strings(locale).home;
   return (
     <>
     {/* ------------------------------------------------------ for individuals */}
-    <section className="border-y border-edge bg-surface-1/40">
+    <section id="features" className="border-y border-edge bg-surface-1/40">
       <div className="mx-auto max-w-5xl px-6 pt-20 pb-16">
         <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">{t.individualTitle}</h2>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-dim">{t.individualIntro}</p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {t.individual.map((f, i) => (
-            <Card key={f.t} Icon={INDIVIDUAL_ICONS[i]} {...f} />
+            <Card key={f.t} Icon={INDIVIDUAL_ICONS[i]} t={f.t} b={f.b} soon={f.soon ? t.soon : undefined} />
           ))}
         </div>
       </div>

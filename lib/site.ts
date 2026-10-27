@@ -1,6 +1,6 @@
 /** Names, links and the download URLs every page uses. */
 export const SITE = {
-  name: "Noodle LLM",
+  name: "Noodle",
   // The company behind it, as noodletechnology.com and the Terms name it.
   company: "Noodle Technology, LLC",
   companyUrl: "https://noodletechnology.com",

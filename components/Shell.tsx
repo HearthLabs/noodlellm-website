@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Inter } from "next/font/google";
 import { SITE } from "@/lib/site";
 import { HTML_LANG, href, strings, type Locale } from "@/lib/i18n";
 import LanguageMenu from "./LanguageMenu";
@@ -12,6 +13,25 @@ import LanguageHint from "./LanguageHint";
  * document and a screen reader, a search engine and the browser's font choice for Chinese
  * and Japanese all read it. Both layouts render this, so there is one header and one footer.
  */
+// Inter, served from this site at build time rather than from Google on each visit.
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-inter" });
+
+/** The logo: an "N" in a rounded square, in the accent colour. */
+function Logo() {
+  return (
+    <svg viewBox="0 0 28 28" fill="none" className="h-7 w-7 text-accent" aria-hidden="true">
+      <rect width="28" height="28" rx="7" fill="currentColor" fillOpacity="0.14" />
+      <path
+        d="M8 19V9l6 10V9m6 10v-6.5"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export default function Shell({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   const t = strings(locale);
 
@@ -35,14 +55,14 @@ export default function Shell({ locale, children }: { locale: Locale; children: 
   ];
 
   return (
-    <html lang={HTML_LANG[locale]}>
+    <html lang={HTML_LANG[locale]} className={inter.variable}>
       <body className="min-h-screen">
         {locale === "en" && <LanguageHint />}
 
-        <header className="border-b border-edge">
+        <header className="sticky top-0 z-30 border-b border-edge bg-surface-0/90 backdrop-blur-md">
           <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-4">
-            <Link href={href(locale, "/")} className="flex items-center gap-2 font-semibold tracking-tight">
-              <img src="/mark.svg" alt="" className="h-7 w-auto" />
+            <Link href={href(locale, "/")} className="flex items-center gap-2.5 font-semibold tracking-tight hover:opacity-90">
+              <Logo />
               {SITE.name}
             </Link>
             <nav className="flex items-center gap-5 text-sm text-ink-dim">
