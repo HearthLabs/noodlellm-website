@@ -2,7 +2,7 @@ import type { Strings } from "./en";
 
 export const es: Strings = {
   meta: {
-    tagline: "IA en tu propio ordenador",
+    tagline: "IA privada en tu propio ordenador",
     description:
       "Una aplicación de escritorio que ejecuta modelos de IA en tu propio ordenador. Comprueba qué puede ejecutar de verdad tu equipo, se instala con un clic y nunca envía tus conversaciones a ninguna parte.",
     pricingTitle: "Precios",
@@ -35,33 +35,91 @@ export const es: Strings = {
   },
 
   home: {
-    heroTitle: "Privado, sin conexión, sin límites de uso. Esta IA local es solo tuya.",
+    heroBadge: "100 % en tu ordenador · Funciona sin internet",
+    heroTitle: "IA privada que vive en tu ordenador, no en la nube.",
     heroBody: (app) =>
-      `${app} ejecuta modelos de IA en tu propio ordenador en lugar de en los servidores de otros. Nada de lo que escribes sale de tu equipo, sigue funcionando sin internet y no hay contador de cuánto lo usas. Escribe con él, resume con él y pregúntale por tus propios documentos.`,
+      `Redacta correos, resume informes y haz preguntas sobre tus documentos confidenciales, sin subir ni una sola palabra a los servidores de otros. ${app} comprueba qué puede ejecutar tu ordenador, se instala con un clic y nunca limita cuánto lo usas.`,
     download: "Descargar para Windows",
     macSoon: "Mac: próximamente",
-    requires: "Windows 10 u 11. Mejor con una tarjeta gráfica de 6 GB o más; sin ella también funciona, pero despacio.",
-    trial: "14 días para probarlo, después",
-    fromPrice: "desde 8 $ al mes",
+    trial: "Gratis durante 14 días (sin tarjeta), luego",
+    fromPrice: "8 $ al mes",
+    requires: "Para Windows 10 u 11. Elige automáticamente el mejor modelo de IA para tu equipo.",
+    installHelp: "¿Lo abres por primera vez? Cómo pasar el aviso de seguridad de Windows →",
 
-    whyTitle: "Por qué ejecutarla tú",
-    whyIntro: "La nube es más lista, pero ese nunca fue el debate. Usa las dos. Guarda una IA en la nube como ChatGPT para los problemas complejos. Haz aquí las tareas cotidianas, privadas y repetitivas: redactar una carta, resumir un informe, encontrar la cláusula en un contrato.",
+    preview: [
+      {
+        tab: "Tienda de modelos",
+        title: "Elige automáticamente la IA adecuada para tu ordenador",
+        body: (app) =>
+          `${app} comprueba la memoria y la tarjeta gráfica de tu ordenador, marca los modelos que caben con una etiqueta verde de «Va genial» y los instala con un clic.`,
+        alt: (app) => `La tienda de ${app} con tres modelos marcados como «Va genial» en este ordenador`,
+      },
+      {
+        tab: "Chat privado",
+        title: "Escribe a partir de tus archivos, en tu propio escritorio",
+        body: (app) =>
+          `Pide una respuesta y ${app} la redacta a partir de tus propios documentos, indicando de qué archivo sale cada parte. Cada palabra se escribe en tu ordenador y no se envía nada a ningún sitio.`,
+        alt: (app) =>
+          `Un chat en ${app} que redacta una respuesta a una clienta a partir de las facturas y la carta de encargo del usuario`,
+      },
+      {
+        tab: "Pregunta a tus archivos",
+        title: "Haz preguntas sobre tus propios documentos",
+        body: (app) =>
+          `Haz clic en «Añadir una carpeta» y ${app} lee una vez los documentos que contiene, aquí en tu ordenador. Nunca se suben ni se modifican.`,
+        alt: (app) => `La sección «Documentos que puede leer» de ${app}, con su botón Añadir una carpeta`,
+      },
+    ],
+
+    individualTitle: "Lo que hace por ti",
+    individualIntro: "Hecho para escribir, leer y hacer gestiones del día a día, sin necesidad de ser informático.",
+    soon: "Próximamente",
+    individual: [
+      {
+        t: "Responde a partir de tus archivos",
+        b: "Haz clic en «Añadir una carpeta» para que Noodle mire dentro de tus documentos de Word, PDF, hojas de cálculo, presentaciones o notas. Antes de empezar te dice qué hay dentro y cuánto tardará más o menos en leerlo, y cada respuesta indica el archivo del que salió.",
+      },
+      {
+        t: "Recuerda quién eres",
+        b: "Cuéntale una vez a qué te dedicas y cómo te gusta que se escriban las cosas, y cada chat nuevo empieza desde ahí. La memoria de Noodle es algo que puedes leer, editar o borrar cuando quieras.",
+      },
+      {
+        t: "Botones de un clic para tareas rutinarias",
+        b: "Guarda las tareas que repites, como responder consultas o convertir notas sueltas en un acta. Pega tu texto y pulsa Ejecutar. Incluye seis tareas listas que puedes adaptar con tus propios ejemplos.",
+      },
+      {
+        t: "No pierde el hilo de los proyectos largos",
+        b: "En las conversaciones largas, otras herramientas olvidan lo que acordasteis al principio. Noodle condensa en silencio los mensajes anteriores en un resumen continuo, que puedes leer cuando quieras, para que los nombres, las cifras y las decisiones no se pierdan.",
+      },
+      {
+        t: "Sigue desde el móvil",
+        b: "Escanea un código una vez para vincular tu móvil por la wifi de casa. Sigue tus chats y busca en los archivos de tu ordenador desde el sofá, con todo cifrado directamente entre el móvil y tu escritorio.",
+      },
+      {
+        t: "Aprende tu forma de escribir",
+        b: "Dale una carpeta con tus correos o artículos antiguos y aprende a escribir con tu tono natural, avisándote antes si se mezclan textos de otras personas. (Requiere Windows con gráfica NVIDIA).",
+        soon: true,
+      },
+    ],
+
+    whyTitle: "Por qué usarlo en tu propio ordenador",
+    whyIntro: "La IA en la nube como ChatGPT es genial para investigar temas públicos o programar a fondo. Noodle está hecho para el trabajo que nunca pegarías en una web pública: contratos de clientes, hojas de cálculo financieras, cartas médicas y notas personales.",
     why: [
+      {
+        t: "Tus archivos no salen de la habitación.",
+        b: "Nunca se sube nada de lo que escribes o abres. No hay nada que filtrar, ninguna empresa entrena con tus documentos y no tienes que fiarte de la política de privacidad de nadie.",
+      },
+      {
+        t: "Nunca te cortan a mitad de proyecto.",
+        b: "Escribir bien exige reformular y reintentar. Los servicios en la nube te limitan o te bloquean tras unas pocas docenas de mensajes. En tu propio ordenador, el intento número cien es tan libre como el primero.",
+      },
+      {
+        t: "Lo bastante lista para el 90 % del trabajo diario.",
+        b: "No necesitas un enorme centro de datos para redactar una carta, resumir un PDF de 40 páginas o encontrar una cláusula en un contrato. Los modelos compactos de hoy resuelven bien el trabajo diario.",
+      },
       {
         t: "Ellos ponen las reglas. Tú te aguantas.",
         b: "Las empresas de IA en la nube deciden el precio, los límites y qué modelo te toca, y lo cambian cuando les conviene. En tu ordenador nada cambia a menos que lo cambies tú.",
-      },
-      {
-        t: "Lo bastante lista es una línea, no una clasificación.",
-        b: "Hay trabajos que necesitan el modelo más listo que exista. La mayoría no: redactar una carta, resumir un informe, encontrar la cláusula de un contrato. Cuando un modelo supera el listón de ese trabajo, ser más listo deja de importar, y lo que importa es el coste, la privacidad y quién manda.",
-      },
-      {
-        t: "Vuelve a intentarlo tantas veces como quieras.",
-        b: "Los buenos resultados salen de reformular, reintentar y pulir. Cuando cada intento se cobra, te contienes. En tu propio ordenador el décimo intento cuesta lo mismo que el primero: nada extra.",
-      },
-      {
-        t: "Tus archivos no salen de la habitación.",
-        b: "No se sube nada de lo que escribes o abres, así que no hay nada que filtrar ni ninguna política de privacidad ajena en la que confiar. Una vez instalado un modelo, no necesita internet en absoluto.",
       },
       {
         t: "No alquilas un modelo. El ordenador es tuyo.",
@@ -72,40 +130,6 @@ export const es: Strings = {
         b: "Hace unos años un ordenador doméstico apenas podía ejecutar nada útil. Hoy una tarjeta gráfica normal ejecuta modelos que resuelven casi todo el trabajo diario, y cada nueva versión hace que más tareas crucen esa línea.",
       },
     ],
-
-    shotTitle: "Escribe como tú, a partir de tus propios archivos",
-    shotBody: "Activa tus archivos y una habilidad que le hayas enseñado, y redacta la respuesta como lo harías tú, indicando de qué documento sale cada parte. El modelo, la habilidad y tus archivos nunca salen de tu ordenador.",
-    shotAlt: (app) => `Un chat en ${app} redactando la respuesta a una clienta a partir de las propias facturas y la carta de encargo, con la habilidad «My writing style» activada`,
-
-    individualTitle: "Lo que hace por ti",
-    individualIntro: "La app está en español, inglés, alemán, japonés y chino, y la mayoría de los modelos responden en el idioma en que escribas.",
-    individual: [
-      {
-        t: "Lee tus propios archivos",
-        b: "Indícale una carpeta con documentos de Word, PDF, hojas de cálculo, presentaciones o notas y pregunta. Antes de leer te dice cuánto tardará y qué archivos tendrá que saltarse, y cada respuesta indica de qué archivo salió.",
-      },
-      {
-        t: "Te recuerda",
-        b: "Dile una vez quién eres y cómo quieres las respuestas, y cada conversación empieza desde ahí. Es un cuadro que puedes leer, editar y vaciar, y empezar un mensaje con «recuerda:» le añade algo.",
-      },
-      {
-        t: "Las conversaciones largas no se desmoronan",
-        b: "Cuando un chat supera lo que el modelo puede retener, resume los mensajes anteriores en vez de olvidarlos, así que los nombres, las cifras y las decisiones del principio siguen contando. Puedes leer ese resumen cuando quieras.",
-      },
-      {
-        t: "Tareas para lo que repites",
-        b: "Guarda un trabajo que haces a menudo, como responder un correo o convertir notas en un acta, con sus propias instrucciones. Luego pega lo que tienes y pulsa Ejecutar. Hay seis tareas listas para empezar, y cada una puede aprender de tus propios ejemplos: lo que entró y el resultado que te quedaste.",
-      },
-      {
-        t: "Enséñale tu estilo",
-        b: "Dale carpetas o archivos con tus propios textos y aprende a sonar como tú. Antes los lee y te avisa si se mezclan textos de otras personas. Después, cada tarea funciona con tu estilo, y al cambiar a otro modelo se lo vuelve a enseñar solo. Enseñar necesita un PC con Windows y tarjeta gráfica NVIDIA, y llega pronto en una actualización.",
-      },
-      {
-        t: "Úsalo desde el móvil",
-        b: "Vincula tu móvil una vez escaneando un código y sigue tus conversaciones desde el sofá o la habitación de al lado, con tus archivos incluidos. Funciona a través de la wifi y todo va cifrado entre los dos, así que nada sale de ahí.",
-      },
-    ],
-
   },
 
 

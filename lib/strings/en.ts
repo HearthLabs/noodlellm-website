@@ -8,9 +8,9 @@
 
 export const en = {
   meta: {
-    tagline: "Run AI on your own machine",
+    tagline: "Private AI that runs on your own computer",
     description:
-      "A desktop app that runs AI models on your own computer. It checks what your machine can actually run, installs in one click, and never sends your conversations anywhere.",
+      "A desktop app that runs AI on your own computer. It checks what your machine can run, installs in one click, and never sends your files or conversations anywhere.",
     pricingTitle: "Pricing",
     pricingDescription: (app: string) =>
       `What ${app} costs: 14 days to try it, then a subscription. Founding rate for the first 100.`,
@@ -41,33 +41,92 @@ export const en = {
   },
 
   home: {
-    heroTitle: "Private, offline, no usage limits. This local AI is only yours.",
+    heroBadge: "100% on your computer · Works with the internet off",
+    heroTitle: "Private AI that lives on your computer, not in the cloud.",
     heroBody: (app: string) =>
-      `${app} runs AI models on your own computer instead of someone else's servers. Nothing you type leaves your machine, it keeps working with the internet off, and there is no meter on how much you use it. Write with it, summarise with it, and ask it about your own documents.`,
+      `Draft emails, summarise reports, and ask questions about your confidential documents—without uploading a single word to someone else’s servers. ${app} checks what your computer can run, sets itself up in one click, and never caps how much you use it.`,
     download: "Download for Windows",
     macSoon: "Mac: coming soon",
-    requires: "Windows 10 or 11. Best with a graphics card with 6 GB or more; without one it still runs, slowly.",
-    trial: "14 days to try it, then",
-    fromPrice: "from $8 a month",
+    trial: "Free for 14 days (no card needed), then",
+    fromPrice: "$8 a month",
+    requires: "For Windows 10 or 11. Automatically picks the best AI model for your hardware.",
+    installHelp: "First time opening? How to click past the Windows security prompt →",
 
-    whyTitle: "Why run it yourself",
-    whyIntro: "The cloud is smarter, but that was never the debate. Use both. Keep a cloud AI such as ChatGPT for complex problems. Do the everyday, private and repetitive tasks here: drafting a letter, summarising a report, finding the clause in a contract.",
+    // The three screenshots under the download, one tab each, in the order of PREVIEW_SHOTS.
+    preview: [
+      {
+        tab: "Model Store",
+        title: "Picks the right AI for your computer automatically",
+        body: (app: string) =>
+          `${app} checks your computer’s memory and graphics card, marks the models that fit with a green “Runs great” badge, and installs them in one click.`,
+        alt: (app: string) => `The ${app} store with three models marked “Runs great” for this computer`,
+      },
+      {
+        tab: "Private Chat",
+        title: "Writes from your own files, on your own desk",
+        body: (app: string) =>
+          `Ask for a reply and ${app} drafts it from your own documents, naming the files each part came from. Every word is written on your computer and nothing is sent anywhere.`,
+        alt: (app: string) =>
+          `A chat in ${app} drafting a reply to a client from the user’s own invoices and engagement letter`,
+      },
+      {
+        tab: "Ask Your Files",
+        title: "Ask questions about your own documents",
+        body: (app: string) =>
+          `Click “Add a folder” and ${app} reads the documents inside once, here on your computer. They are never uploaded and never changed.`,
+        alt: (app: string) => `The “Documents it may read” section of ${app}, with its Add a folder button`,
+      },
+    ],
+
+    individualTitle: "What it does for you",
+    individualIntro: "Built for everyday writing, reading, and admin—without needing a degree in computer science.",
+    soon: "Coming soon",
+    individual: [
+      {
+        t: "Answers questions from your files",
+        b: "Click “Add a folder” to let Noodle look inside your Word documents, PDFs, spreadsheets, slides, or notes. Before anything starts, it tells you what is inside and roughly how long reading will take—and every answer names the file it came from.",
+      },
+      {
+        t: "Remembers who you are",
+        b: "Tell it once about your job and how you like things written, and every new chat starts from there. Noodle’s Memory is something you can read, edit, or clear at any time.",
+      },
+      {
+        t: "One-click buttons for routine jobs",
+        b: "Save tasks you repeat—like replying to inquiries or turning rough notes into meeting minutes. Paste in your text and press Run. Comes with six ready-made tasks you can customise with your own examples.",
+      },
+      {
+        t: "Keeps track of long projects",
+        b: "In long conversations, other tools forget what you agreed at the start. Noodle quietly condenses earlier messages into a running summary—which you can read anytime—so names, numbers, and decisions stick.",
+      },
+      {
+        t: "Continue from your phone",
+        b: "Scan a code once to pair your phone over home Wi-Fi. Carry on your chats and search your computer’s files from the sofa—encrypted directly between your phone and your desk.",
+      },
+      {
+        t: "Learns your personal writing voice",
+        b: "Give it a folder of your past emails or articles and it learns to write in your natural tone—warning you first if other people’s writing is mixed in. (Requires Windows with NVIDIA graphics.)",
+        soon: true,
+      },
+    ],
+
+    whyTitle: "Why run it on your own computer",
+    whyIntro: "Cloud AI like ChatGPT is great for public research or heavy coding. Noodle is built for the work you wouldn’t paste into a public website: client contracts, financial spreadsheets, medical letters, and personal notes.",
     why: [
+      {
+        t: "Your files never leave the room.",
+        b: "Nothing you type or open is ever uploaded. There is nothing to leak, no corporate training on your documents, and nobody else’s privacy policy to take on faith.",
+      },
+      {
+        t: "Never get cut off mid-project.",
+        b: "Good writing takes rewording and retrying. Cloud services throttle you or lock you out after a few dozen messages. On your own computer, the hundredth try is as free as the first.",
+      },
+      {
+        t: "Smart enough for 90% of daily work.",
+        b: "You don’t need a massive data centre to draft a letter, summarise a 40-page PDF, or spot a clause in a contract. Today’s compact models handle everyday work well.",
+      },
       {
         t: "They set the terms. You live with them.",
         b: "Cloud AI companies decide the price, the limits and which model you get, and change them when it suits them. On your computer nothing changes unless you change it.",
-      },
-      {
-        t: "Clever enough is a line, not a ranking.",
-        b: "Some jobs need the cleverest model there is. Most do not: drafting a letter, summarising a report, finding the clause in a contract. Once a model clears the bar for the job, being cleverer stops mattering, and what matters is cost, privacy and who is in charge.",
-      },
-      {
-        t: "Try again as often as you like.",
-        b: "Good results come from rewording, retrying and refining. When you pay for every attempt, you hold back. On your own computer the tenth try costs the same as the first: nothing extra.",
-      },
-      {
-        t: "Your files never leave the room.",
-        b: "Nothing you type or open is uploaded, so there is nothing to leak and nobody else's privacy policy to trust. Once a model is installed it does not need the internet at all.",
       },
       {
         t: "You are not renting a model. You own the machine.",
@@ -78,40 +137,6 @@ export const en = {
         b: "A few years ago a home computer could run little that was useful. Today an ordinary graphics card runs models that handle most everyday work, and every new release moves more across the line.",
       },
     ],
-
-    shotTitle: "It writes like you, from your own files",
-    shotBody: "Turn on your files and a skill you taught it, and it drafts the reply the way you would, naming the documents each part came from. The model, the skill and your files never leave your computer.",
-    shotAlt: (app: string) => `A chat in ${app} drafting a reply to a client from the user's own invoices and engagement letter, with the skill “My writing style” switched on`,
-
-    individualTitle: "What it does for you",
-    individualIntro: "The app speaks English, German, Spanish, Japanese and Chinese, and most models answer in whichever language you write in.",
-    individual: [
-      {
-        t: "It reads your own files",
-        b: "Point it at a folder of Word documents, PDFs, spreadsheets, slides or notes and ask about them. Before reading, it tells you how long it will take and which files it has to skip, and every answer names the file it came from.",
-      },
-      {
-        t: "It remembers you",
-        b: "Tell it once who you are and how you like answers written, and every conversation starts from there. It is a box you can read, edit and empty, and starting a message with \"remember:\" adds to it.",
-      },
-      {
-        t: "Long conversations do not fall apart",
-        b: "When a chat grows longer than the model can hold, it condenses the earlier messages into a summary instead of forgetting them, so names, figures and decisions from the start still count. You can read that summary at any time.",
-      },
-      {
-        t: "Tasks for jobs you repeat",
-        b: "Save a job you do often, like answering an email or turning notes into minutes, with its own instructions. Then paste in what you have and press Run. Six ready-made tasks are there to start from, and each one can be taught from examples of your own: what went in and the result you kept.",
-      },
-      {
-        t: "Teach it your style",
-        b: "Give it folders or files of your own writing and it learns to sound like you. It reads them first and warns you if they mix other people's writing in. Every task then runs in your style, and switching to another model teaches it your style again on its own. Teaching needs a Windows PC with an NVIDIA graphics card, and arrives in an update soon.",
-      },
-      {
-        t: "Use it from your phone",
-        b: "Pair your phone once by scanning a code, then carry on your conversations from the sofa or the next room, with your files included. It works through Wi-Fi and everything is encrypted between the two, so nothing gets out.",
-      },
-    ],
-
   },
 
 

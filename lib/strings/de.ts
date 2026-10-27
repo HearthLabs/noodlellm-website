@@ -2,7 +2,7 @@ import type { Strings } from "./en";
 
 export const de: Strings = {
   meta: {
-    tagline: "KI auf deinem eigenen Rechner",
+    tagline: "Private KI auf deinem eigenen Computer",
     description:
       "Eine Desktop-App, die KI-Modelle auf deinem eigenen Computer ausführt. Sie prüft, was dein Rechner wirklich schafft, installiert mit einem Klick und schickt deine Gespräche nirgendwohin.",
     pricingTitle: "Preise",
@@ -35,33 +35,91 @@ export const de: Strings = {
   },
 
   home: {
-    heroTitle: "Privat, offline, ohne Nutzungslimit. Diese lokale KI gehört nur dir.",
+    heroBadge: "100 % auf deinem Computer · Funktioniert auch ohne Internet",
+    heroTitle: "Private KI, die auf deinem Computer lebt, nicht in der Cloud.",
     heroBody: (app) =>
-      `${app} führt KI-Modelle auf deinem eigenen Computer aus statt auf den Servern anderer. Nichts, was du eingibst, verlässt deinen Rechner, es läuft auch ohne Internet weiter, und kein Zähler misst, wie viel du es nutzt. Schreib damit, fass damit zusammen und frag es zu deinen eigenen Dokumenten.`,
+      `Entwirf E-Mails, fass Berichte zusammen und stell Fragen zu deinen vertraulichen Dokumenten – ohne ein einziges Wort auf die Server anderer hochzuladen. ${app} prüft, was dein Computer schafft, richtet sich mit einem Klick ein und begrenzt nie, wie viel du es nutzt.`,
     download: "Für Windows herunterladen",
     macSoon: "Mac: kommt bald",
-    requires: "Windows 10 oder 11. Am besten mit einer Grafikkarte ab 6 GB; ohne läuft es auch, nur langsam.",
-    trial: "14 Tage zum Ausprobieren, danach",
-    fromPrice: "ab 8 $ im Monat",
+    trial: "14 Tage kostenlos (keine Karte nötig), danach",
+    fromPrice: "8 $ im Monat",
+    requires: "Für Windows 10 oder 11. Wählt automatisch das beste KI-Modell für deine Hardware.",
+    installHelp: "Zum ersten Mal geöffnet? So kommst du an der Windows-Sicherheitsabfrage vorbei →",
 
-    whyTitle: "Warum selbst betreiben",
-    whyIntro: "Die Cloud ist klüger, aber darum ging es nie. Nutze beides. Behalte eine Cloud-KI wie ChatGPT für komplexe Probleme. Erledige die alltäglichen, vertraulichen und wiederkehrenden Aufgaben hier: einen Brief entwerfen, einen Bericht zusammenfassen, die Klausel in einem Vertrag finden.",
+    preview: [
+      {
+        tab: "Modell-Store",
+        title: "Wählt automatisch die richtige KI für deinen Computer",
+        body: (app) =>
+          `${app} prüft Arbeitsspeicher und Grafikkarte deines Computers, markiert passende Modelle mit einem grünen „Läuft super“ und installiert sie mit einem Klick.`,
+        alt: (app) => `Der Store von ${app} mit drei Modellen, die auf diesem Computer als „Läuft super“ markiert sind`,
+      },
+      {
+        tab: "Privater Chat",
+        title: "Schreibt aus deinen eigenen Dateien, an deinem eigenen Schreibtisch",
+        body: (app) =>
+          `Bitte um eine Antwort, und ${app} entwirft sie aus deinen eigenen Dokumenten und nennt die Dateien, aus denen jeder Teil stammt. Jedes Wort entsteht auf deinem Computer, und nichts wird irgendwohin geschickt.`,
+        alt: (app) =>
+          `Ein Chat in ${app}, der aus den eigenen Rechnungen und dem Mandatsschreiben eine Antwort an eine Kundin entwirft`,
+      },
+      {
+        tab: "Frag deine Dateien",
+        title: "Stell Fragen zu deinen eigenen Dokumenten",
+        body: (app) =>
+          `Klicke auf „Ordner hinzufügen“, und ${app} liest die Dokumente darin einmal ein, hier auf deinem Computer. Sie werden nie hochgeladen und nie verändert.`,
+        alt: (app) => `Der Bereich „Dokumente, die es lesen darf“ in ${app} mit der Schaltfläche „Ordner hinzufügen“`,
+      },
+    ],
+
+    individualTitle: "Was es für dich tut",
+    individualIntro: "Gemacht für alltägliches Schreiben, Lesen und Verwaltungsarbeit – ganz ohne Informatikstudium.",
+    soon: "Kommt bald",
+    individual: [
+      {
+        t: "Beantwortet Fragen aus deinen Dateien",
+        b: "Klicke auf „Ordner hinzufügen“, damit Noodle in deine Word-Dokumente, PDFs, Tabellen, Präsentationen oder Notizen schauen kann. Bevor es losgeht, sagt es dir, was darin ist und wie lange das Einlesen ungefähr dauert – und jede Antwort nennt die Datei, aus der sie stammt.",
+      },
+      {
+        t: "Merkt sich, wer du bist",
+        b: "Erzähl ihm einmal von deinem Beruf und wie du Texte magst, und jeder neue Chat beginnt dort. Noodles Gedächtnis kannst du jederzeit lesen, ändern oder leeren.",
+      },
+      {
+        t: "Ein Klick für Routinearbeit",
+        b: "Speichere Aufgaben, die du immer wieder machst – etwa Anfragen beantworten oder grobe Notizen in ein Protokoll verwandeln. Text einfügen, auf Ausführen klicken. Sechs fertige Aufgaben sind dabei, die du mit eigenen Beispielen anpassen kannst.",
+      },
+      {
+        t: "Behält lange Projekte im Blick",
+        b: "In langen Gesprächen vergessen andere Werkzeuge, was am Anfang vereinbart wurde. Noodle fasst frühere Nachrichten still zu einer laufenden Zusammenfassung zusammen – die du jederzeit lesen kannst –, damit Namen, Zahlen und Entscheidungen bleiben.",
+      },
+      {
+        t: "Am Handy weitermachen",
+        b: "Scanne einmal einen Code, um dein Handy über das WLAN zu Hause zu koppeln. Führe deine Chats weiter und durchsuche die Dateien deines Computers vom Sofa aus – direkt zwischen Handy und Schreibtisch verschlüsselt.",
+      },
+      {
+        t: "Lernt deinen persönlichen Schreibstil",
+        b: "Gib ihm einen Ordner mit deinen früheren E-Mails oder Artikeln, und es lernt, in deinem natürlichen Ton zu schreiben – und warnt dich vorher, wenn Texte anderer Leute dabei sind. (Erfordert Windows mit NVIDIA-Grafik.)",
+        soon: true,
+      },
+    ],
+
+    whyTitle: "Warum es auf deinem eigenen Computer laufen lassen",
+    whyIntro: "Cloud-KI wie ChatGPT ist großartig für öffentliche Recherche oder aufwendiges Programmieren. Noodle ist für die Arbeit gemacht, die du nie in eine öffentliche Website einfügen würdest: Mandantenverträge, Finanztabellen, ärztliche Briefe und persönliche Notizen.",
     why: [
+      {
+        t: "Deine Dateien verlassen nie den Raum.",
+        b: "Nichts, was du tippst oder öffnest, wird je hochgeladen. Es gibt nichts, was durchsickern kann, kein Training eines Konzerns mit deinen Dokumenten und keine fremde Datenschutzerklärung, der du blind vertrauen musst.",
+      },
+      {
+        t: "Nie mitten im Projekt ausgebremst.",
+        b: "Gutes Schreiben heißt umformulieren und neu versuchen. Cloud-Dienste drosseln dich oder sperren dich nach ein paar Dutzend Nachrichten aus. Auf deinem eigenen Computer ist der hundertste Versuch so frei wie der erste.",
+      },
+      {
+        t: "Klug genug für 90 % der täglichen Arbeit.",
+        b: "Für einen Brief, die Zusammenfassung eines 40-seitigen PDFs oder eine Klausel im Vertrag brauchst du kein riesiges Rechenzentrum. Die kompakten Modelle von heute erledigen die Alltagsarbeit gut.",
+      },
       {
         t: "Sie machen die Regeln. Du musst damit leben.",
         b: "Cloud-KI-Anbieter bestimmen Preis, Grenzen und welches Modell du bekommst, und ändern das, wann es ihnen passt. Auf deinem Computer ändert sich nichts, solange du es nicht änderst.",
-      },
-      {
-        t: "Klug genug ist eine Linie, keine Rangliste.",
-        b: "Manche Aufgaben brauchen das klügste Modell, das es gibt. Die meisten nicht: einen Brief entwerfen, einen Bericht zusammenfassen, die Klausel im Vertrag finden. Sobald ein Modell die Latte für eine Aufgabe überspringt, zählt noch mehr Klugheit kaum, und es zählen Kosten, Datenschutz und wer das Sagen hat.",
-      },
-      {
-        t: "Probier es so oft, wie du willst.",
-        b: "Gute Ergebnisse entstehen durch Umformulieren, Wiederholen und Feinschliff. Wenn jeder Versuch abgerechnet wird, hältst du dich zurück. Auf deinem eigenen Rechner kostet der zehnte Versuch dasselbe wie der erste: nichts extra.",
-      },
-      {
-        t: "Deine Dateien verlassen nie den Raum.",
-        b: "Nichts, was du tippst oder öffnest, wird hochgeladen, also kann nichts durchsickern, und du musst niemandes Datenschutzerklärung vertrauen. Ist ein Modell installiert, braucht es überhaupt kein Internet.",
       },
       {
         t: "Du mietest kein Modell. Der Rechner gehört dir.",
@@ -72,40 +130,6 @@ export const de: Strings = {
         b: "Vor ein paar Jahren konnte ein Heimcomputer kaum etwas Nützliches ausführen. Heute läuft auf einer gewöhnlichen Grafikkarte ein Modell, das den größten Teil der Alltagsarbeit erledigt, und jede neue Veröffentlichung holt mehr über diese Linie.",
       },
     ],
-
-    shotTitle: "Es schreibt wie du, aus deinen eigenen Dateien",
-    shotBody: "Schalte deine Dateien und eine Fähigkeit ein, die du ihm beigebracht hast, und es entwirft die Antwort so, wie du sie schreiben würdest, mit den Dokumenten, aus denen jeder Teil stammt. Modell, Fähigkeit und Dateien verlassen nie deinen Computer.",
-    shotAlt: (app) => `Ein Chat in ${app}, der aus den eigenen Rechnungen und dem Mandatsschreiben eine Antwort an eine Kundin entwirft, mit eingeschalteter Fähigkeit „My writing style“`,
-
-    individualTitle: "Was es für dich tut",
-    individualIntro: "Die App gibt es auf Deutsch, Englisch, Spanisch, Japanisch und Chinesisch, und die meisten Modelle antworten in der Sprache, in der du schreibst.",
-    individual: [
-      {
-        t: "Es liest deine eigenen Dateien",
-        b: "Zeig ihm einen Ordner mit Word-Dokumenten, PDFs, Tabellen, Präsentationen oder Notizen und frag. Vor dem Einlesen sagt es dir, wie lange es dauert und welche Dateien es überspringen muss, und jede Antwort nennt die Datei, aus der sie stammt.",
-      },
-      {
-        t: "Es merkt sich dich",
-        b: "Sag ihm einmal, wer du bist und wie du Antworten magst, und jedes Gespräch beginnt dort. Es ist ein Feld, das du lesen, ändern und leeren kannst, und eine Nachricht, die mit „merk dir:“ beginnt, ergänzt es.",
-      },
-      {
-        t: "Lange Gespräche fallen nicht auseinander",
-        b: "Wird ein Chat länger, als das Modell behalten kann, fasst es die früheren Nachrichten zusammen, statt sie zu vergessen, sodass Namen, Zahlen und Entscheidungen vom Anfang weiter zählen. Diese Zusammenfassung kannst du jederzeit lesen.",
-      },
-      {
-        t: "Aufgaben für wiederkehrende Arbeit",
-        b: "Speichere eine Arbeit, die du oft machst, etwa eine E-Mail beantworten oder aus Notizen ein Protokoll machen, mit eigenen Anweisungen. Dann fügst du ein, was du hast, und klickst auf Ausführen. Sechs fertige Aufgaben sind zum Start dabei, und jede kann aus deinen eigenen Beispielen lernen: was hereinkam und welches Ergebnis du behalten hast.",
-      },
-      {
-        t: "Bring ihm deinen Stil bei",
-        b: "Gib ihm Ordner oder Dateien mit deinen eigenen Texten, und es lernt, wie du zu klingen. Vorher liest es sie und warnt dich, wenn Texte anderer Leute dabei sind. Danach läuft jede Aufgabe in deinem Stil, und wechselst du zu einem anderen Modell, bringt es ihm deinen Stil von selbst noch einmal bei. Zum Beibringen brauchst du einen Windows-PC mit NVIDIA-Grafikkarte; es kommt bald mit einem Update.",
-      },
-      {
-        t: "Vom Handy aus nutzen",
-        b: "Koppeln Sie Ihr Handy einmal per Code-Scan und führen Sie Ihre Unterhaltungen vom Sofa oder aus dem Nebenzimmer weiter, mitsamt Ihren Dateien. Es funktioniert über WLAN, und alles ist zwischen beiden Geräten verschlüsselt, sodass nichts nach außen dringt.",
-      },
-    ],
-
   },
 
 
