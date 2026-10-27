@@ -41,6 +41,8 @@ We use this to provide your subscription and licence (legal basis: performance o
 
 **Licences and computers.** Each subscription works on a limited number of computers. To enforce this, when the App activates or refreshes your licence it sends our server your licence key, a random ID the App creates when it is installed, and your computer's name, so you can tell your computers apart when signing one out. The random ID is not a hardware fingerprint, and it is not linked to anything else on your computer. We record when each computer was first and last seen. A computer not seen for 60 days stops counting towards your limit. We use this to provide the licence and to stop licences being shared (performance of contract, and our legitimate interest in preventing misuse).
 
+**Free trial.** While your free trial is running, the App tells our server when it started, together with a code that identifies your computer. The code is a one-way scramble of the ID your operating system already keeps for the computer, so we cannot work out the ID itself from it, and it is not linked to your name, email or anything you type. We keep the date the trial began for that code, so reinstalling the App does not start a new trial (our legitimate interest in preventing misuse). Once the trial ends or you subscribe, the App stops sending it.
+
 **Signing in on another computer.** If you choose "Already subscribed?", we email a 6-digit code to your subscription email address. The code expires after 10 minutes and works only once. Supabase generates the code, and Resend delivers the email (performance of contract).
 
 **Refunds and disputes.** If a payment is refunded or disputed, we add that subscription's ID to a list of revoked subscriptions. The App downloads this list when it is online, so that a revoked licence stops working (performance of contract, and our legitimate interest in preventing fraud). The list contains only subscription IDs.
@@ -90,6 +92,7 @@ Some of these providers process data in the United States or other countries out
 - **Subscription records and the name given at checkout:** while your subscription is active, then 6 years for tax and accounting.
 - **Creator profiles and payout details:** while you have a creator account, then 6 years for tax and accounting. If you ask us to delete a listing, we delete its files, except files people have already bought, which we keep so they can download them again.
 - **Computer records:** while your subscription is active, then 12 months.
+- **Trial start dates:** 24 months after the trial began.
 - **Sign-in codes:** 10 minutes, or until used.
 - **Support emails:** 2 years after the conversation ends.
 - **Server logs:** as long as each provider keeps them, typically no more than 90 days.
