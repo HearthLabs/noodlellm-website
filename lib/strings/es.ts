@@ -48,6 +48,14 @@ export const es: Strings = {
 
     preview: [
       {
+        tab: "Instalar con un clic",
+        title: "Instala un modelo con un solo botón",
+        body: (app) =>
+          `Nada que configurar ni ajustes que aprender. Elige un modelo, mira si va bien en tu ordenador y pulsa Instalar: ${app} descarga la versión adecuada para tu equipo, lista para chatear.`,
+        alt: (app) =>
+          `La página de un modelo en ${app} que dice «Va genial en tu PC», con un único botón Instalar`,
+      },
+      {
         tab: "Tienda de modelos",
         title: "Elige automáticamente la IA adecuada para tu ordenador",
         body: (app) =>

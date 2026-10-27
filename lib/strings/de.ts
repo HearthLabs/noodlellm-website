@@ -48,6 +48,14 @@ export const de: Strings = {
 
     preview: [
       {
+        tab: "Ein-Klick-Installation",
+        title: "Ein Modell mit einem Klick installieren",
+        body: (app) =>
+          `Nichts einzurichten, keine Einstellungen zu lernen. Wähl ein Modell, sieh, ob es auf deinem Computer gut läuft, und klick auf Installieren: ${app} lädt die richtige Version für deine Hardware herunter, bereit zum Chatten.`,
+        alt: (app) =>
+          `Eine Modellseite in ${app} mit „Läuft super auf deinem PC“ und einer einzigen Schaltfläche zum Installieren`,
+      },
+      {
         tab: "Modell-Store",
         title: "Wählt automatisch die richtige KI für deinen Computer",
         body: (app) =>

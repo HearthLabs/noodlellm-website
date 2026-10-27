@@ -52,8 +52,16 @@ export const en = {
     requires: "For Windows 10 or 11. Automatically picks the best AI model for your hardware.",
     installHelp: "First time opening? How to click past the Windows security prompt →",
 
-    // The four screenshots under the download, one tab each, in the order of PREVIEW_SHOTS.
+    // The five screenshots under the download, one tab each, in the order of PREVIEW_SHOTS.
     preview: [
+      {
+        tab: "One-Click Install",
+        title: "Install a model with one button",
+        body: (app: string) =>
+          `Nothing to set up and no settings to learn. Pick a model, see whether it runs well on your computer, and press Install: ${app} downloads the right version for your hardware, ready to chat.`,
+        alt: (app: string) =>
+          `A model page in ${app} saying “Runs great on your PC”, with one Install button`,
+      },
       {
         tab: "Model Store",
         title: "Picks the right AI for your computer automatically",

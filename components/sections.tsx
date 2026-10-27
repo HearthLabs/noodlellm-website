@@ -99,6 +99,7 @@ const INDIVIDUAL_ICONS = [IconFiles, IconMemory, IconEasy, IconUnlimited, IconPh
 
 // The screenshots under the download, in the order of `home.preview` in the strings.
 const PREVIEW_SHOTS = [
+  { src: "/shots/install.webp", width: 1400, height: 878 },
   { src: "/shots/model-store.webp", width: 1140, height: 565 },
   { src: "/shots/app.webp", width: 2560, height: 1640 },
   { src: "/shots/your-style.webp", width: 806, height: 430 },

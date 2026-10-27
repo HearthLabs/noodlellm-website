@@ -16,9 +16,10 @@ type Shot = {
 
 /**
  * The app's screenshots right under the download, one tab each, so the first screen shows
- * the real thing: the store that picks models for this computer, a chat answering from your
- * files, teaching it your style, and the phone app. Every screenshot is rendered, and the ones not chosen are hidden, so all three
- * are in the page for search engines and load without waiting for a click.
+ * the real thing: installing a model with one button, the store that picks models for this
+ * computer, a chat answering from your files, teaching it your style, and the phone app.
+ * Every screenshot is rendered and the ones not chosen are hidden, so all of them are in the
+ * page for search engines and load without waiting for a click.
  */
 export default function PreviewTabs({ shots }: { shots: Shot[] }) {
   const [current, setCurrent] = useState(0);
@@ -26,12 +27,8 @@ export default function PreviewTabs({ shots }: { shots: Shot[] }) {
 
   return (
     <div className="mt-14">
-      <div className="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-        <div>
-          <h2 className="text-lg font-medium">{shown.title}</h2>
-          <p className="text-sm text-ink-dim">{shown.body}</p>
-        </div>
-        <div role="tablist" className="flex shrink-0 flex-wrap gap-1.5 rounded-lg border border-edge bg-surface-1 p-1 text-xs">
+      <div className="mb-4 grid gap-4">
+        <div role="tablist" className="flex w-fit max-w-full flex-wrap gap-1.5 rounded-lg border border-edge bg-surface-1 p-1 text-xs">
           {shots.map((s, i) => (
             <button
               key={s.src}
@@ -48,6 +45,10 @@ export default function PreviewTabs({ shots }: { shots: Shot[] }) {
               {i + 1}. {s.tab}
             </button>
           ))}
+        </div>
+        <div>
+          <h2 className="text-lg font-medium">{shown.title}</h2>
+          <p className="max-w-3xl text-sm text-ink-dim">{shown.body}</p>
         </div>
       </div>
 
