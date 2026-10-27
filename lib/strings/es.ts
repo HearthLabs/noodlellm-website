@@ -53,7 +53,7 @@ export const es: Strings = {
         body: (app) =>
           `Nada que configurar ni ajustes que aprender. Elige un modelo, mira si va bien en tu ordenador y pulsa Instalar: ${app} descarga la versión adecuada para tu equipo, lista para chatear.`,
         alt: (app) =>
-          `La página de un modelo en ${app} que dice «Va genial en tu PC», con un único botón Instalar`,
+          `La tienda de ${app} con tres modelos marcados como «Va genial» en este ordenador`,
       },
       {
         tab: "Tienda de modelos",
@@ -61,7 +61,7 @@ export const es: Strings = {
         body: (app) =>
           `${app} comprueba la memoria y la tarjeta gráfica de tu ordenador, marca los modelos que caben con una etiqueta verde de «Va genial» y los instala con un clic.`,
         alt: (app) =>
-          `La tienda de ${app} con tres modelos marcados como «Va genial» en este ordenador`,
+          `La página de un modelo en ${app} que dice «Va genial en tu PC», con un único botón Instalar`,
       },
       {
         tab: "Chat con tus archivos",
