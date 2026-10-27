@@ -101,7 +101,9 @@ const INDIVIDUAL_ICONS = [IconFiles, IconMemory, IconEasy, IconUnlimited, IconPh
 const PREVIEW_SHOTS = [
   { src: "/shots/model-store.webp", width: 1140, height: 565 },
   { src: "/shots/app.webp", width: 2560, height: 1640 },
-  { src: "/shots/ask-your-files.webp", width: 744, height: 318 },
+  { src: "/shots/your-style.webp", width: 806, height: 430 },
+  // A phone screen is tall and narrow, so it is shown at phone size, centred.
+  { src: "/shots/phone.webp", width: 645, height: 650, narrow: true },
 ];
 
 function Card({ Icon, t, b, soon }: { Icon: () => React.JSX.Element; t: string; b: string; soon?: string }) {

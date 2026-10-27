@@ -3,12 +3,21 @@
 import Image from "next/image";
 import { useState } from "react";
 
-type Shot = { tab: string; title: string; body: string; alt: string; src: string; width: number; height: number };
+type Shot = {
+  tab: string;
+  title: string;
+  body: string;
+  alt: string;
+  src: string;
+  width: number;
+  height: number;
+  narrow?: boolean;
+};
 
 /**
  * The app's screenshots right under the download, one tab each, so the first screen shows
- * the real thing: the store that picks models for this computer, a chat, and the folders it
- * may read. Every screenshot is rendered, and the ones not chosen are hidden, so all three
+ * the real thing: the store that picks models for this computer, a chat answering from your
+ * files, teaching it your style, and the phone app. Every screenshot is rendered, and the ones not chosen are hidden, so all three
  * are in the page for search engines and load without waiting for a click.
  */
 export default function PreviewTabs({ shots }: { shots: Shot[] }) {
@@ -49,7 +58,19 @@ export default function PreviewTabs({ shots }: { shots: Shot[] }) {
           hidden={i !== current}
           className="overflow-hidden rounded-xl border border-edge bg-surface-1 shadow-2xl shadow-black/60"
         >
-          <Image src={s.src} alt={s.alt} width={s.width} height={s.height} className="block h-auto w-full" />
+          {s.narrow ? (
+            <div className="flex justify-center px-6 pt-8">
+              <Image
+                src={s.src}
+                alt={s.alt}
+                width={s.width}
+                height={s.height}
+                className="block h-auto w-full max-w-xs rounded-t-2xl border border-b-0 border-edge"
+              />
+            </div>
+          ) : (
+            <Image src={s.src} alt={s.alt} width={s.width} height={s.height} className="block h-auto w-full" />
+          )}
         </div>
       ))}
     </div>

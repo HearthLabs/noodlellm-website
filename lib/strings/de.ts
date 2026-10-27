@@ -52,22 +52,32 @@ export const de: Strings = {
         title: "Wählt automatisch die richtige KI für deinen Computer",
         body: (app) =>
           `${app} prüft Arbeitsspeicher und Grafikkarte deines Computers, markiert passende Modelle mit einem grünen „Läuft super“ und installiert sie mit einem Klick.`,
-        alt: (app) => `Der Store von ${app} mit drei Modellen, die auf diesem Computer als „Läuft super“ markiert sind`,
-      },
-      {
-        tab: "Privater Chat",
-        title: "Schreibt aus deinen eigenen Dateien, an deinem eigenen Schreibtisch",
-        body: (app) =>
-          `Bitte um eine Antwort, und ${app} entwirft sie aus deinen eigenen Dokumenten und nennt die Dateien, aus denen jeder Teil stammt. Jedes Wort entsteht auf deinem Computer, und nichts wird irgendwohin geschickt.`,
         alt: (app) =>
-          `Ein Chat in ${app}, der aus den eigenen Rechnungen und dem Mandatsschreiben eine Antwort an eine Kundin entwirft`,
+          `Der Store von ${app} mit drei Modellen, die auf diesem Computer als „Läuft super“ markiert sind`,
       },
       {
-        tab: "Frag deine Dateien",
-        title: "Stell Fragen zu deinen eigenen Dokumenten",
+        tab: "Chat mit deinen Dateien",
+        title: "Es schreibt wie du, aus deinen eigenen Dateien",
         body: (app) =>
-          `Klicke auf „Ordner hinzufügen“, und ${app} liest die Dokumente darin einmal ein, hier auf deinem Computer. Sie werden nie hochgeladen und nie verändert.`,
-        alt: (app) => `Der Bereich „Dokumente, die es lesen darf“ in ${app} mit der Schaltfläche „Ordner hinzufügen“`,
+          `Schalte deine Dateien und eine Fähigkeit ein, die du ihm beigebracht hast, und es entwirft die Antwort so, wie du sie schreiben würdest, mit den Dokumenten, aus denen jeder Teil stammt. Modell, Fähigkeit und Dateien verlassen nie deinen Computer.`,
+        alt: (app) =>
+          `Ein Chat in ${app}, der aus den eigenen Rechnungen und dem Mandatsschreiben eine Antwort an eine Kundin entwirft, mit eingeschalteter Fähigkeit „My writing style“`,
+      },
+      {
+        tab: "Dein Stil",
+        title: "Bring ihm deinen Schreibstil bei",
+        body: (app) =>
+          `Gib ${app} Ordner mit deinen eigenen Texten, und es lernt, wie du zu klingen – gespeichert als Stil, den du im Chat einschaltest. Zum Beibringen brauchst du eine NVIDIA-Grafikkarte; es kommt bald mit einem Update.`,
+        alt: (app) =>
+          `Die Seite „Beibringen“ in ${app} mit einem Stil namens „Sam’s formal letters“ und der Schaltfläche für einen neuen Stil`,
+      },
+      {
+        tab: "Handy-Fernbedienung",
+        title: "Am Handy weitermachen",
+        body: (app) =>
+          `Koppel dein Handy einmal per Code-Scan und frag dann vom Sofa aus. ${app} antwortet auf deinem Computer, aus deinen eigenen Dateien, verschlüsselt über dein WLAN.`,
+        alt: (app) =>
+          `Die Handy-App von ${app} beantwortet eine Frage aus den Besprechungsnotizen, mit eingeschaltetem „Meine Dateien nutzen“`,
       },
     ],
 

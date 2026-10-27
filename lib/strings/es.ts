@@ -52,22 +52,32 @@ export const es: Strings = {
         title: "Elige automáticamente la IA adecuada para tu ordenador",
         body: (app) =>
           `${app} comprueba la memoria y la tarjeta gráfica de tu ordenador, marca los modelos que caben con una etiqueta verde de «Va genial» y los instala con un clic.`,
-        alt: (app) => `La tienda de ${app} con tres modelos marcados como «Va genial» en este ordenador`,
-      },
-      {
-        tab: "Chat privado",
-        title: "Escribe a partir de tus archivos, en tu propio escritorio",
-        body: (app) =>
-          `Pide una respuesta y ${app} la redacta a partir de tus propios documentos, indicando de qué archivo sale cada parte. Cada palabra se escribe en tu ordenador y no se envía nada a ningún sitio.`,
         alt: (app) =>
-          `Un chat en ${app} que redacta una respuesta a una clienta a partir de las facturas y la carta de encargo del usuario`,
+          `La tienda de ${app} con tres modelos marcados como «Va genial» en este ordenador`,
       },
       {
-        tab: "Pregunta a tus archivos",
-        title: "Haz preguntas sobre tus propios documentos",
+        tab: "Chat con tus archivos",
+        title: "Escribe como tú, a partir de tus propios archivos",
         body: (app) =>
-          `Haz clic en «Añadir una carpeta» y ${app} lee una vez los documentos que contiene, aquí en tu ordenador. Nunca se suben ni se modifican.`,
-        alt: (app) => `La sección «Documentos que puede leer» de ${app}, con su botón Añadir una carpeta`,
+          `Activa tus archivos y una habilidad que le hayas enseñado, y redacta la respuesta como lo harías tú, indicando de qué documento sale cada parte. El modelo, la habilidad y tus archivos nunca salen de tu ordenador.`,
+        alt: (app) =>
+          `Un chat en ${app} redactando la respuesta a una clienta a partir de las propias facturas y la carta de encargo, con la habilidad «My writing style» activada`,
+      },
+      {
+        tab: "Tu estilo",
+        title: "Enséñale tu forma de escribir",
+        body: (app) =>
+          `Dale a ${app} carpetas con tus propios textos y aprende a sonar como tú, guardado como un estilo que activas en el chat. Enseñar necesita una tarjeta gráfica NVIDIA y llega pronto en una actualización.`,
+        alt: (app) =>
+          `La página Enseñar de ${app}, con un estilo llamado «Sam’s formal letters» y el botón para enseñar un estilo nuevo`,
+      },
+      {
+        tab: "Mando desde el móvil",
+        title: "Sigue desde el móvil",
+        body: (app) =>
+          `Vincula tu móvil una vez escaneando un código y pregunta desde el sofá. ${app} responde en tu ordenador, a partir de tus propios archivos, cifrado a través de tu wifi.`,
+        alt: (app) =>
+          `La app móvil de ${app} respondiendo a partir de las notas de una reunión, con «Usar mis archivos» activado`,
       },
     ],
 

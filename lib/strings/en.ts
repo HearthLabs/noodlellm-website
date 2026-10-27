@@ -52,29 +52,39 @@ export const en = {
     requires: "For Windows 10 or 11. Automatically picks the best AI model for your hardware.",
     installHelp: "First time opening? How to click past the Windows security prompt →",
 
-    // The three screenshots under the download, one tab each, in the order of PREVIEW_SHOTS.
+    // The four screenshots under the download, one tab each, in the order of PREVIEW_SHOTS.
     preview: [
       {
         tab: "Model Store",
         title: "Picks the right AI for your computer automatically",
         body: (app: string) =>
           `${app} checks your computer’s memory and graphics card, marks the models that fit with a green “Runs great” badge, and installs them in one click.`,
-        alt: (app: string) => `The ${app} store with three models marked “Runs great” for this computer`,
-      },
-      {
-        tab: "Private Chat",
-        title: "Writes from your own files, on your own desk",
-        body: (app: string) =>
-          `Ask for a reply and ${app} drafts it from your own documents, naming the files each part came from. Every word is written on your computer and nothing is sent anywhere.`,
         alt: (app: string) =>
-          `A chat in ${app} drafting a reply to a client from the user’s own invoices and engagement letter`,
+          `The ${app} store with three models marked “Runs great” for this computer`,
       },
       {
-        tab: "Ask Your Files",
-        title: "Ask questions about your own documents",
+        tab: "Chat With Your Files",
+        title: "It writes like you, from your own files",
         body: (app: string) =>
-          `Click “Add a folder” and ${app} reads the documents inside once, here on your computer. They are never uploaded and never changed.`,
-        alt: (app: string) => `The “Documents it may read” section of ${app}, with its Add a folder button`,
+          `Turn on your files and a skill you taught it, and it drafts the reply the way you would, naming the documents each part came from. The model, the skill and your files never leave your computer.`,
+        alt: (app: string) =>
+          `A chat in ${app} drafting a reply to a client from the user’s own invoices and engagement letter, with the skill “My writing style” switched on`,
+      },
+      {
+        tab: "Your Style",
+        title: "Teach it your writing style",
+        body: (app: string) =>
+          `Give ${app} folders of your own writing and it learns to sound like you, kept as a style you switch on in Chat. Teaching needs an NVIDIA graphics card and arrives in an update soon.`,
+        alt: (app: string) =>
+          `The Teach page in ${app}, with a style called “Sam’s formal letters” and a Teach a new style button`,
+      },
+      {
+        tab: "Phone Remote",
+        title: "Carry on from your phone",
+        body: (app: string) =>
+          `Pair your phone once by scanning a code, then ask from the sofa. ${app} answers on your computer, from your own files, encrypted over your Wi-Fi.`,
+        alt: (app: string) =>
+          `The ${app} phone app answering a question from the user’s meeting notes, with “Use my files” switched on`,
       },
     ],
 
