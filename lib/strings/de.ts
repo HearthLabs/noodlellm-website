@@ -53,7 +53,7 @@ export const de: Strings = {
         body: (app) =>
           `Nichts einzurichten, keine Einstellungen zu lernen. Wähl ein Modell, sieh, ob es auf deinem Computer gut läuft, und klick auf Installieren: ${app} lädt die richtige Version für deine Hardware herunter, bereit zum Chatten.`,
         alt: (app) =>
-          `Eine Modellseite in ${app} mit „Läuft super auf deinem PC“ und einer einzigen Schaltfläche zum Installieren`,
+          `Der Store von ${app} mit drei Modellen, die auf diesem Computer als „Läuft super“ markiert sind`,
       },
       {
         tab: "Modell-Store",
@@ -61,7 +61,7 @@ export const de: Strings = {
         body: (app) =>
           `${app} prüft Arbeitsspeicher und Grafikkarte deines Computers, markiert passende Modelle mit einem grünen „Läuft super“ und installiert sie mit einem Klick.`,
         alt: (app) =>
-          `Der Store von ${app} mit drei Modellen, die auf diesem Computer als „Läuft super“ markiert sind`,
+          `Eine Modellseite in ${app} mit „Läuft super auf deinem PC“ und einer einzigen Schaltfläche zum Installieren`,
       },
       {
         tab: "Chat mit deinen Dateien",

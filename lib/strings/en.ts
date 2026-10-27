@@ -60,7 +60,7 @@ export const en = {
         body: (app: string) =>
           `Nothing to set up and no settings to learn. Pick a model, see whether it runs well on your computer, and press Install: ${app} downloads the right version for your hardware, ready to chat.`,
         alt: (app: string) =>
-          `A model page in ${app} saying “Runs great on your PC”, with one Install button`,
+          `The ${app} store with three models marked “Runs great” for this computer`,
       },
       {
         tab: "Model Store",
@@ -68,7 +68,7 @@ export const en = {
         body: (app: string) =>
           `${app} checks your computer’s memory and graphics card, marks the models that fit with a green “Runs great” badge, and installs them in one click.`,
         alt: (app: string) =>
-          `The ${app} store with three models marked “Runs great” for this computer`,
+          `A model page in ${app} saying “Runs great on your PC”, with one Install button`,
       },
       {
         tab: "Chat With Your Files",
