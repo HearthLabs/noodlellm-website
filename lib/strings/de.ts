@@ -155,7 +155,7 @@ export const de: Strings = {
     faqTitle: "Häufige Fragen",
     faq: [
       ["Gibt es eine Grenze, wie viel ich es nutzen kann?", "Nein. Es läuft auf deinem eigenen Computer, also gibt es keine Kosten pro Nachricht und kein Tageslimit. Nutze es, so viel du willst."],
-      ["Wird etwas, das ich eingebe, an euch geschickt?", "Nein. Deine Fragen, Antworten und Dateien verlassen nie deinen Computer. Die App geht nur online, um Modelle herunterzuladen und dein Abo zu prüfen."],
+      ["Wird etwas, das ich eingebe, an euch geschickt?", "Nein. Deine Fragen, Antworten und Dateien verlassen nie deinen Computer. Die App geht nur online, um Modelle herunterzuladen und dein Abo zu prüfen. Die einzige Ausnahme ist die Websuche, die aus ist, bis du sie einschaltest: Dann geht die Frage, mit der du suchst, an den Suchdienst Tavily, über dein eigenes Konto, und nie an uns."],
       ["Was passiert nach den 14 Tagen?", "Die App pausiert, bis du ein Abo abschließt. Deine Modelle und Gespräche bleiben auf deinem Computer, und nichts wird gelöscht."],
       ["Kann ich es auf mehreren Computern nutzen?", "Ja, auf bis zu 2 deiner Computer. Auf einem neuen öffnest du Konto und gibst die E-Mail-Adresse an, mit der du bezahlt hast; wir schicken dir einen 6-stelligen Code. Ist das Limit erreicht, zeigt die App deine Computer, damit du einen abmelden kannst. Ein Computer, der 60 Tage nicht genutzt wird, gibt seinen Platz von selbst frei."],
       ["Funktioniert es offline?", "Ja. Deine Lizenz wird auf deinem Computer geprüft, ohne Internet. Sie erneuert sich, sobald du online bist. Nur ein Computer, der länger als etwa 35 Tage offline bleibt, muss einmal online gehen."],
