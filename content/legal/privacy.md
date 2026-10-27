@@ -1,6 +1,6 @@
 # Privacy Statement
 
-**Last updated:** 10 October 2026
+**Last updated:** 27 October 2026
 
 This statement explains what personal data **Noodle Technology, LLC** ("**Noodle LLM**", "**we**", "**us**") collects when you use the Noodle LLM app (the "**App**"), the website at noodlellm.com (the "**Website**"), and our subscription service, and what we do with it. We are the controller of this data.
 
@@ -8,8 +8,8 @@ Contact: Noodle Technology, LLC, at [info@noodletechnology.com](mailto:info@nood
 
 ## The short version
 
-- **What you type stays on your computer.** The App runs AI models on your own machine. Your questions, conversations, documents, folders and the answers the App writes are never sent to us or anyone else. We cannot see them.
-- **The App goes online for three things only:** to fetch the list of models, to download the models you choose, and to manage your subscription.
+- **What you type stays on your computer.** The App runs AI models on your own machine. Your questions, conversations, documents, folders and the answers the App writes are never sent to us. We cannot see them. The only time any of your words leave your computer is if you turn on web search, and then only the question you search with, sent to Tavily (see section 3).
+- **The App goes online for three things only:** to fetch the list of models, to download the models you choose, and to manage your subscription. A fourth, web search, happens only if you turn it on and add your own Tavily key.
 - **We keep only what a subscription needs:** your email address, the name you give at checkout, your subscription details, and the computers your licence is on.
 - **Stripe handles payments.** We never see your full card number.
 - **No advertising or tracking.** The Website sets no cookies and uses no analytics, and we never sell your data.
@@ -64,7 +64,7 @@ We do not use your data for advertising, we do not sell or "share" it as Califor
 - **Subscription and licence requests**, to our backend on Supabase, carrying the data described in section 2.
 - **Subscribing and managing billing**, which happens in your web browser on Stripe's pages.
 
-Internet research, if it is ever added to the App, will be off unless you turn it on, because a search query contains your words.
+**Web search**, only if you turn it on. It is off until you switch on "Allow internet search" in the App's settings and add a key from your own account at [Tavily](https://tavily.com), a search service. Then, in a chat where you press "Search the web", the App sends your newest question to Tavily so it can find web pages for the answer. It sends that question only, never the rest of the conversation, your files or anything else, and it goes from your computer straight to Tavily, never through us. Tavily is not our provider: you use it under your own account, and it handles your searches as an independent controller under [its own privacy policy](https://www.tavily.com/privacy). Your Tavily key is stored only on your computer. You can turn web search off, or remove the key, at any time.
 
 ## 4. The Website
 
@@ -99,7 +99,7 @@ Some of these providers process data in the United States or other countries out
 
 ## 8. Security
 
-Connections are encrypted. Our database restricts each record to its owner, and licence keys are signed with a private key held only on our server. Because your conversations and documents never leave your computer, keeping them safe depends on keeping that computer secure.
+Connections are encrypted. Our database restricts each record to its owner, and licence keys are signed with a private key held only on our server. Because your conversations and documents never leave your computer (apart from the questions you choose to search the web with), keeping them safe depends on keeping that computer secure.
 
 ## 9. Your rights
 
