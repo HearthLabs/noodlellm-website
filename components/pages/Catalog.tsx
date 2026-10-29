@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { href, strings, type Locale } from "@/lib/i18n";
+import { SITE } from "@/lib/site";
+import { strings, type Locale } from "@/lib/i18n";
 import catalog from "@/public/catalog.json";
 
 /**
@@ -79,12 +79,12 @@ export default function Catalog({ locale }: { locale: Locale }) {
       </div>
 
       <p className="mt-10 max-w-2xl text-sm leading-relaxed text-ink-faint">{t.note}</p>
-      <Link
-        href={`${href(locale, "/")}#download`}
+      <a
+        href={SITE.installerUrl}
         className="mt-6 inline-block rounded-md bg-accent px-4 py-2 text-sm font-medium text-surface-0 hover:brightness-110"
       >
         {t.cta}
-      </Link>
+      </a>
     </main>
   );
 }

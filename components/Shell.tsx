@@ -73,13 +73,13 @@ export default function Shell({ locale, children }: { locale: Locale; children: 
                 {t.nav.pricing}
               </Link>
               <LanguageMenu locale={locale} label={t.nav.language} />
-              {/* The homepage's download buttons, not a file: they offer Windows and its warning, and say Mac is coming soon. */}
-              <Link
-                href={`${href(locale, "/")}#download`}
+              {/* The Windows installer itself, the same file as the homepage's button. There is no Mac build yet. */}
+              <a
+                href={SITE.installerUrl}
                 className="rounded-md bg-accent px-3 py-1.5 font-medium text-surface-0 hover:brightness-110"
               >
                 {t.nav.download}
-              </Link>
+              </a>
             </nav>
           </div>
         </header>
