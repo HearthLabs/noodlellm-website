@@ -48,7 +48,7 @@ export const en = {
     download: "Download for Windows",
     macSoon: "Mac: coming soon",
     trial: "Free for 14 days (no card needed), then",
-    fromPrice: "$8 a month",
+    fromPrice: "$3 a month",
     requires: "For Windows 10 or 11. Automatically picks the best AI model for your hardware.",
     installHelp: "First time opening? How to click past the Windows security prompt →",
 
@@ -208,7 +208,7 @@ export const en = {
       ["What happens after the 14 days?", "The app pauses until you subscribe. Your models and conversations stay on your computer, and nothing is deleted."],
       ["Can I use it on more than one computer?", "Yes, on up to 2 of your computers. On a new one, open Account and use the email you paid with; we send you a 6-digit code. At the limit, the app lists your computers so you can sign one out. A computer unused for 60 days frees its place by itself."],
       ["Does it work offline?", "Yes. Your licence is checked on your computer, without the internet. It renews itself whenever you are online, so only a computer kept offline for more than about 35 days needs to go online once."],
-      ["Will my $8 go up later?", "For the first 100 members, you keep $8 a month for as long as you stay subscribed, even after the price for new members rises. Or pay $100 once for a lifetime licence and never pay again."],
+      ["Will my $3 go up later?", "For the first 100 members, you keep $3 a month for as long as you stay subscribed, even after the price for new members rises. Or pay $100 once for a lifetime licence and never pay again."],
       ["Can I cancel?", "Yes, at any time, from the Account section of the app."],
       ["We are a firm. Do we each need a subscription?", "No. The Practices plan covers up to 15 computers in one office for one price."],
     ],

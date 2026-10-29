@@ -42,7 +42,7 @@ export const es: Strings = {
     download: "Descargar para Windows",
     macSoon: "Mac: próximamente",
     trial: "Gratis durante 14 días (sin tarjeta), luego",
-    fromPrice: "8 $ al mes",
+    fromPrice: "3 $ al mes",
     requires: "Para Windows 10 u 11. Elige automáticamente el mejor modelo de IA para tu equipo.",
     installHelp: "¿Lo abres por primera vez? Cómo pasar el aviso de seguridad de Windows →",
 
@@ -202,7 +202,7 @@ export const es: Strings = {
       ["¿Qué pasa después de los 14 días?", "La aplicación se pausa hasta que te suscribas. Tus modelos y conversaciones se quedan en tu ordenador y no se borra nada."],
       ["¿Puedo usarlo en más de un ordenador?", "Sí, en hasta 2 de tus ordenadores. En uno nuevo, abre Cuenta y usa el correo con el que pagaste; te enviamos un código de 6 dígitos. Al llegar al límite, la aplicación muestra tus ordenadores para que cierres la sesión en uno. Un ordenador que no se usa durante 60 días libera su plaza solo."],
       ["¿Funciona sin conexión?", "Sí. Tu licencia se comprueba en tu ordenador, sin internet. Se renueva sola cuando estás conectado, así que solo un ordenador que pase más de unos 35 días sin conexión tendrá que conectarse una vez."],
-      ["¿Subirán mis 8 $ más adelante?", "Para los 100 primeros miembros, se mantienen los 8 $ al mes mientras sigan suscritos, aunque suba el precio para los nuevos miembros. O paga 100 $ una sola vez por una licencia de por vida y no vuelvas a pagar."],
+      ["¿Subirán mis 3 $ más adelante?", "Para los 100 primeros miembros, se mantienen los 3 $ al mes mientras sigan suscritos, aunque suba el precio para los nuevos miembros. O paga 100 $ una sola vez por una licencia de por vida y no vuelvas a pagar."],
       ["¿Puedo cancelar?", "Sí, cuando quieras, desde la sección Cuenta de la aplicación."],
       ["Somos un despacho. ¿Necesitamos una suscripción cada uno?", "No. El plan Despachos cubre hasta 15 ordenadores de una oficina por un solo precio."],
     ],

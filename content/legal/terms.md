@@ -1,6 +1,6 @@
 # Terms and Conditions
 
-**Last updated:** 11 October 2026
+**Last updated:** 29 October 2026
 
 These Terms and Conditions ("**Terms**") cover the Noodle LLM desktop app (the "**App**"), the website at noodlellm.com (the "**Website**"), and any trial, subscription or licence you get from us. Together we call these the "**Service**".
 
@@ -32,7 +32,7 @@ You must be at least 18, or the age of legal majority where you live if that is 
 
 4.1 **Plans.** We offer these plans, each billed monthly or yearly in US dollars:
 
-- **Founding member**: $8 a month, or $100 once for a lifetime licence. This plan is available to the first 100 subscribers only. You keep that price for as long as your subscription stays active, even if prices rise for new subscribers. If you cancel and later subscribe again, you pay the price at that time.
+- **Founding member**: $3 a month, or $100 once for a lifetime licence. This plan is available to the first 100 subscribers only. You keep that price for as long as your subscription stays active, even if prices rise for new subscribers. If you cancel and later subscribe again, you pay the price at that time.
 - **Standard**: $29 a month or $300 a year, for one person.
 - **Practice**: $200 a month or $2,000 a year, for one firm, practice or office.
 
