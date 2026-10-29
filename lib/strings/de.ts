@@ -42,7 +42,7 @@ export const de: Strings = {
     download: "Für Windows herunterladen",
     macSoon: "Mac: kommt bald",
     trial: "14 Tage kostenlos (keine Karte nötig), danach",
-    fromPrice: "8 $ im Monat",
+    fromPrice: "3 $ im Monat",
     requires: "Für Windows 10 oder 11. Wählt automatisch das beste KI-Modell für deine Hardware.",
     installHelp: "Zum ersten Mal geöffnet? So kommst du an der Windows-Sicherheitsabfrage vorbei →",
 
@@ -201,7 +201,7 @@ export const de: Strings = {
       ["Was passiert nach den 14 Tagen?", "Die App pausiert, bis du ein Abo abschließt. Deine Modelle und Gespräche bleiben auf deinem Computer, und nichts wird gelöscht."],
       ["Kann ich es auf mehreren Computern nutzen?", "Ja, auf bis zu 2 deiner Computer. Auf einem neuen öffnest du Konto und gibst die E-Mail-Adresse an, mit der du bezahlt hast; wir schicken dir einen 6-stelligen Code. Ist das Limit erreicht, zeigt die App deine Computer, damit du einen abmelden kannst. Ein Computer, der 60 Tage nicht genutzt wird, gibt seinen Platz von selbst frei."],
       ["Funktioniert es offline?", "Ja. Deine Lizenz wird auf deinem Computer geprüft, ohne Internet. Sie erneuert sich, sobald du online bist. Nur ein Computer, der länger als etwa 35 Tage offline bleibt, muss einmal online gehen."],
-      ["Steigen meine 8 $ später?", "Für die ersten 100 Mitglieder bleibt es bei 8 $ im Monat, solange das Abo läuft, auch wenn der Preis für neue Mitglieder steigt. Oder einmalig 100 $ für eine lebenslange Lizenz, danach nie wieder zahlen."],
+      ["Steigen meine 3 $ später?", "Für die ersten 100 Mitglieder bleibt es bei 3 $ im Monat, solange das Abo läuft, auch wenn der Preis für neue Mitglieder steigt. Oder einmalig 100 $ für eine lebenslange Lizenz, danach nie wieder zahlen."],
       ["Kann ich kündigen?", "Ja, jederzeit, im Bereich Konto der App."],
       ["Wir sind eine Kanzlei. Braucht jede Person ein Abo?", "Nein. Der Tarif für Kanzleien & Praxen gilt für bis zu 15 Computer an einem Standort, zu einem Preis."],
     ],
